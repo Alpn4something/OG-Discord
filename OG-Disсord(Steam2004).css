@@ -3,7 +3,7 @@
  * @author Alpn4, (and also dom1torii by making stuff i forked, thanks:3).
  * @description OG-Steam inspired fork of VGUIcord (aka Discord 1.6).
  * @website https://github.com/Alpn4something/OG-Discord
- * @version 0.9.0
+ * @version 0.9.9
 */
 
 /* --- Settings --- */
@@ -34,7 +34,9 @@
 
     --custom-text: #ffffff;
     --custom-secondary-text: #dddddd;
-    --custom-somebuttons: #cdcdcd
+    --custom-somebuttons: #cdcdcd;
+
+    --custom-notifications: #171717; /* Not only notifs but any main red stuff, really. E.G - screen sharing */
 
 }
 
@@ -60,6 +62,16 @@
     --font-headline: var(--font) !important;
     --font-code: var(--font) !important; 
     
+
+
+    --background-message-hover: var(--custom-secondary-bg) !important;
+
+    --checkbox-background-default: var(--custom-secondary-bg) !important;
+
+    --primary-800: var(--custom-bg) !important;
+
+    --interactive-icon-default: var(--custom-somebuttons) !important;
+
     --app-background-frame: var(--custom-bg) !important;
     --background-primary: var(--custom-bg) !important;
     --background-modifier-selected: var(--custom-secondary-accent) !important;
@@ -93,14 +105,6 @@
     --button-secondary-background: var(--custom-bg) !important;
     --autocomplete-bg: var(--custom-bg) !important;
     --status-danger: var(--custom-secondary-accent) !important;
-
-    --background-message-hover: var(--custom-secondary-bg) !important;
-
-    --checkbox-background-default: var(--custom-secondary-bg) !important;
-
-    --primary-800: var(--custom-bg) !important;
-
-
     --input-background: var(--custom-secondary-bg) !important;
 
     --shadow-high: transparent !important;
@@ -131,6 +135,9 @@
     -moz-osx-font-smoothing: grayscale !important;
     font-smooth: never !important;
     text-rendering: optimizeSpeed !important;
+ 
+    --custom-cutout-radius: 0 !important;
+
 }
 
 
@@ -242,12 +249,13 @@ div:not([class="_201d5e8a3c09670a-contents"]):not([class="a16aea1526925c2c-value
 .emojiItem_fc7141[tabindex="0"] {
     background-color: var(--custom-secondary-bg) !important;
 }
-    .listItem__650eb > div:not(div.folderHeader__48112) .wrapper_cc5dd2 {
+    .listItem__650eb > div:not(div.folderHeader__48112) .wrapper_cc5dd2,
+    .iconContainer_a76561 /* study hub icon */  {
         box-shadow: 
             1px 0 0 0 var(--dark-border),
             -1px 0 0 0 var(--light-border),
             0 1px 0 0 var(--dark-border),
-            0 -1px 0 0 var(--light-border);
+            0 -1px 0 0 var(--light-border) !important;
     }
 
     foreignObject {
@@ -269,7 +277,8 @@ div:not([class="_201d5e8a3c09670a-contents"]):not([class="a16aea1526925c2c-value
     box-shadow: none;
 }
 
-.folderGroupBackground__48112 {
+./* Apply regular box shadow */
+.folderButton__48112[aria-expanded="false"] {
     box-shadow: 
     1px 0 0 0 var(--dark-border),
     -1px 0 0 0 var(--light-border),
@@ -278,19 +287,15 @@ div:not([class="_201d5e8a3c09670a-contents"]):not([class="a16aea1526925c2c-value
 }
 
 /* this is regular borders setup! */
-.visual-refresh .panels__5e434,
 .visual-refresh .chatContent_f75fb0,
 .listItemWrapper__91816,
-.visual-refresh .content__5e434,
 .visual-refresh .container_f37cb1,
 .visual-refresh .toolbar__9293f .iconWrapper__9293f,
 .visual-refresh .button__85643,
 ::-webkit-scrollbar-thumb,
 .app__160d8 button:not(.clearStatusButton__958c7):not(.attachButton__0923f):not(.barButtonMain__0f481),
-:where(.visual-refresh) .menu_c1e9c4,
 .message__5126c .buttonsInner__5126c,
 .floatingBars__74017:empty+.stackedBars__74017:nth-child(2),
-.customItem_c1e9c4,
 :where(.visual-refresh) .tooltipPrimary_c36707,
 :where(.visual-refresh) .popout_a16aea:not(.popoutPositionTop_a16aea),
 .card__5cea9,
@@ -302,14 +307,11 @@ div:not([class="_201d5e8a3c09670a-contents"]):not([class="a16aea1526925c2c-value
 .boostContainer_ceb06a,
 .visual-refresh .shopCard_c3d04b,
 .loadingPopout__58f1c,
-.visual-refresh .contentWrapper__08434,
 .visual-refresh .messageGroupWrapper_e8b59c,
 .visual-refresh .jumpButton_e8b59c,
 .visual-refresh .messagesPopoutWrap_e8b59c,
 .visual-refresh .container_d9c882,
 .visual-refresh .container__6764b,
-.visual-refresh .reactionBtn__23977,
-.actionButton_f8fa06,
 .item__133bf,
 :where(.visual-refresh) .top_aa8da2 .item_aa8da2,
 .controls_ab6641 > div,
@@ -319,41 +321,32 @@ div:not([class="_201d5e8a3c09670a-contents"]):not([class="a16aea1526925c2c-value
 .visual-refresh .messages__1ccd1,
 .tertiary__06eda,
 .visual-refresh .autocompleteAttached__6b0e0,
-.closeButton_c2b141,
 .reactionTooltip_b49891,
 .container__55c99,
-.bar__7aaec,
 .popoutContainer__0f481,
 .authedAppV2__50a54,
-.outer_c0bea0,
 .card__39ec2,
 .card__9d597,
-.overlay_c0bea0,
 .item_caf372,
-[class*='vc-addon-card'],
 .comboBoxInputContainer__0edde,
 .subnavContainer_e4d939,
 .outer_ab8609,
-.editButton__41037,
 .selected__58105,
 .visible__58105,
 .button__63abb.back__63abb,
 .button__63abb.forward__63abb,
 .pictureInPictureWindow__6341f,
-.modalHeaderButtons_b92f52,
 .closeButton_d6f39b,
 .container_a62383,
 .progressContainer__0d0f9, /* Server boost progress */
 .popover_f84418, /* Some popovers */
-.menu_c1e9c4, /* Some popout menus */
 .menu_c1e9c4 div[role="group"] .item_c1e9c4, /* Popout group items */
 .customItem_c1e9c4, /* Popout emotes */
 .contentWrapper__08434, /* GIFs / Stickers / Emojis */
 .navButton__08434, /* GIFs etc. navigation buttons */
 .reactionTooltip_bbcccb, /* Reaction tooltips */
-.role_af3987, /* Profile roles */
 .bannerButton_fb7f94, /* Profile banner buttons */
-
+/*.blobContainer_e5445c, this is server icon. No longer needed since server folder box shadow also does the same effect (lol?)*/
 .buttonWrapper__24af7.attachButtonInner__0923f, /* Message attachment button */
 #popout_3067 .item_c1e9c4, /* Message attachments popout buttons */
 .buttons__74017 > div, /* Right side message text area buttons */
@@ -385,9 +378,6 @@ div[aria-label="Poll options"] > div, /* Poll option buttons */
 .topPill_aa8da2 > div, /* Message requests tabs */
 .preview__6b741, /* Accessibility preview */
 .box__376cb, /* Inbox messages */
-
-
-
 .popout_a16aea, /* Voice devices dropdown */
 .selectDropdown__0edde, /* Other settings dropdowns for example noise suppression */
 .optionButtonWrapper__270d7:not(:has([aria-pressed="true"])), /* Server customization options */
@@ -410,19 +400,14 @@ div[aria-label="Poll options"] > div, /* Poll option buttons */
 .vc-addon-card, /* Vencord plugin cards */
 .authBox__921c5, /* Login box */
 .list__920b8, /* Login users list */
-
 .content__5e434, /* Main content */
-.folderGroupBackground__48112, /* Open folder group*/
 .content_f75fb0 > .chatContent_f75fb0, /* Chat box */
 .panels__5e434, /* User panel */
 .buttons__37e49 button, /* User panel buttons */
 .actionButtons_e131a9 button, /* User panel VC buttons */
 .clickable__9293f, /* Top channel bar buttons */
 .role_af3987, /* Profile roles */
-.progressContainer__0d0f9, /* Server boost progress */
-.popover_f84418, /* Some popovers */
 .menu_c1e9c4, /* Some popout menus */
-
 .pollContainer_b7e1cb, /* Polls */
 .container_f69538, /* Poll results? */
 .wrapper__72c38, /* Some input wrappers*/
@@ -432,7 +417,14 @@ div[aria-label="Poll options"] > div, /* Poll option buttons */
 .checkboxIndicator__714a9, /* Checkboxes */
 .input_ac6cb0, /* Start conversation input */
 code, /* code */
-.input__0ed4f, /* Login inputs */
+.button_a22cb0, /* Login buttons + .modalHeaderButtons_b92f52 for some reason?!?!? */
+.vc-notification-root,
+.vc-notification-close-btn,
+.folderGroupBackground__48112,
+.container_a76561, /* study groups panel */
+.itemCard__7e549, /* activity pannel */
+.card__4b63d, /* server boost card */
+.listItem_a04c02, /* boosting faq */
 
 body {
     transition: none !important;
@@ -442,25 +434,38 @@ body {
     outline: none !important;
 }
 
+  /* a box shadow for folders */
+.folderButton__48112[aria-expanded="false"],
+.listItem__650eb > span:has(.blobContainer_e5445c) {
+    box-shadow:
+    0 -1px 0 var(--light-border), 1px 0 0 var(--dark-border),
+    0 1px 0 var(--dark-border), -1px 0 0 var(--light-border);
+ }
+
+
+
 /*.visual-refresh .reactionBtn__23977 - button on left of your reaction*/
 
 /* reactions border remake */
 
-.visual-refresh .reaction__23977:not(.reactionMe__23977) {
+.visual-refresh .reaction__23977:not(.reactionMe__23977),
+.visual-refresh .reaction_f8896c:not(.reactionMe__f8896c) /* reactions on forum */ {
     transition: none !important;
     border: 1px solid !important;
     border-color: var(--light-border) var(--dark-border-reaction) var(--dark-border-reaction) var(--light-border) !important;
     box-shadow: none !important;
     outline: none !important;
 }
-.visual-refresh .reaction__23977.reactionMe__23977 {
+.visual-refresh .reaction__23977.reactionMe__23977,
+.visual-refresh .reaction_f8896c.reactionMe_f8896c /* reactionme for forums */ {
     transition: none !important;
     box-shadow: none !important;
     outline: none !important;
     border: 1px solid !important;
     border-color: var(--light-border-reaction) var(--dark-border-reaction) var(--dark-border-reaction) var(--light-border-reaction) !important;
-    filter: drop-shadow(1px 1px 1px var(--custom-secondary-accent))
+    filter: drop-shadow(1px 1px 1px var(--custom-secondary-accent)) !important;
 }
+
 
 /* Apply secondary background (brighter, in case of my code) - new code port */
 .embedFull__623de, /* Embeds */
@@ -478,6 +483,9 @@ code, /* code */
 .buttons__74017 > div /* Right side message text area buttons */ {
   background-color: var(--custom-secondary-bg-brighter) !important;
 }
+code {
+   padding: 5px;
+}
 
 [class*='contentHeader_e9e3ed theme-dark theme-darker images-dark'],
 body {
@@ -487,11 +495,18 @@ body {
     box-shadow: none !important;
 }
 
-.item_caf372,
-body {
-    color: var(-alpn4-custom-bg-brighter) !important;
+/* vencord close button tweaks cuz it looks ugly with borders */
+.vc-notification-close-btn {
+    padding: 5px;
+    margin-bottom: 5px !important;
+    opacity: 1 !important;
+}
+.vc-notification-close-btn svg {
+        color: var(--custom-somebuttons);
+        margin-bottom: -3px !important
 }
 
+/* inverted borders setup! */
 .app__160d8 button:active,
 .visual-refresh .button__85643:active,
 .visual-refresh .toolbar__9293f .iconWrapper__9293f:active,
@@ -507,7 +522,10 @@ body {
 .wrapper__44b0c,
 .button__63abb.back__63abb.disabled__63abb,
 .button__63abb.forward__63abb.disabled__63abb,
-[class*='button_a22cb0 md_a22cb0 primary_a22cb0 hasText_a22cb0 fullWidth_a22cb0'] {
+[class*='button_a22cb0 md_a22cb0 primary_a22cb0 hasText_a22cb0 fullWidth_a22cb0'],
+[class*="voiceSectionGuildImage__"],
+.avatar_c19a55,
+.gameCoverImage__1a3d6 /* game banner from "favorite game" and other stuff */ {
     border: 1px solid !important;
     border-color: var(--dark-border) var(--light-border) var(--light-border) var(--dark-border) !important;
     box-shadow: none !important;
@@ -593,6 +611,17 @@ body {
         --radius-lg: 0px !important;
         border-radius: 0 !important;
     }
+
+
+     /* Server icon and members icon unrounding fix - in Active Now (right side) */
+[class*="voiceSectionGuildImage__"] {
+    -webkit-mask: none !important;
+}
+[class*="partyMember_"] {
+    -webkit-mask: none !important;
+    margin-left: 5px !important;
+}
+    /* FIX END */
 
     .svg_cc5dd2 > mask,
     .svg__44b0c > rect,
@@ -695,9 +724,6 @@ body {
         border: 2px solid var(--background-base-lower);
         top: -4px;
         right: -4px;
-    }
-    .folderGroup__48112.isExpanded__48112 > .stack_dbd263 {
-        overflow: visible !important;
     }
 
     .slider__3f21e > rect[rx='10'] {
@@ -871,6 +897,10 @@ margin: -10px !important;
 
 
 
+/* CUSTOM - server boost settings tweaks */
+.container_a62383 {
+    display: none !important;
+}
 
 /* CUSTOM - no nitro wishlist, bc fu discord */
 
@@ -953,9 +983,22 @@ margin: -10px !important;
 .button__67645,
 [class*="backForwardButtons"] [class*="forward__"]:not([class*="disabled__"]),
 [class*="backForwardButtons"] [class*="back__"]:not([class*="disabled__"]),
-[class="button_a22cb0 md_a22cb0 icon-only_a22cb0"] {
+[class="button_a22cb0 md_a22cb0 icon-only_a22cb0"],
+.container_a76561 {
     background-color: var(--alpn4-custom-bg-brighter) !important;
 }
+    /* banner buttons redone */
+.wrapper_da5890 .bannerButton_fb7f94 {
+    box-shadow:
+    0 -1px 0 var(--light-border), 1px 0 0 var(--dark-border),
+    0 0 0 transparent, -1px 0 0 var(--light-border) !important;
+
+}
+.bannerButton_fb7f94 {
+    background-color: var(--alpn4-custom-bg-black) !important;
+}
+   /* banner buttons end */
+
 
 .tabBarItem__37bfc.item_aa8da2 {
     background-color: var(--alpn4-custom-bg-brighter) !important;
@@ -1067,18 +1110,10 @@ foreignObject[mask*="status-online"] .status_a423bd {
         background: var(--light-border);
 }
 
-[class*="outer_"] [class*="wrapper__"] img {
-    background-color: var(--alpn4-custom-bg-black) !important;
-}
-
-[class*="panels"] [class*="wrapper__"] img {
-    background-color: var(--alpn4-custom-bg-black) !important;
-}
-
-[class*="container"] [class*="wrapper__"] img {
-    background-color: var(--alpn4-custom-bg-black) !important;
-}
-
+[class*="outer_"] [class*="wrapper__"] img,
+[class*="contents_"] [class*="avatar_"],
+[class*="panels"] [class*="wrapper__"] img,
+[class*="container"] [class*="wrapper__"] img,
 [class*="section"] [class*="wrapper__"] img {
     background-color: var(--alpn4-custom-bg-black) !important;
 }
@@ -1091,7 +1126,8 @@ foreignObject[mask*="status-online"] .status_a423bd {
 .background_fb62e2,
 .iconWrapper__9293f,
 .icon__9293f,
-.modalHeaderButtons_b92f52 {
+.modalHeaderButtons_b92f52,
+.container__62dd3 {
     background-color: var(--alpn4-custom-bg-brighter) !important;
 }
 
@@ -1106,10 +1142,30 @@ foreignObject[mask*="status-online"] .status_a423bd {
 
 /* Boost goal recolor in case its being enabled */
 
-/* Finn badges */
+/* Обучал нейро-уёбка базам ксс */
 
 .container__8061a {
     display: none !important;
+}
+
+/* discover button simple fixes */
+
+.gradientBackground_e9ef78 {
+    display: none !important;
+}
+
+.tab__65d41 {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+    margin-top: 10px !important;
+    height: 30px;
+    background-color: var(--alpn4-custom-bg-brighter) !important;
+}
+.tab__65d41::after {
+    display: none !important;
+}
+.tab__65d41.selected_aa8da2 {
+    color: var(--custom-accent) !important;
 }
 
 
@@ -1163,12 +1219,29 @@ foreignObject[mask*="status-online"] .status_a423bd {
      -webkit-text-stroke: 0 !important;
 }
 
-[class*="nameGlow_"] {
+[class*="nameGlow_"],
+[class*="nameGlow_"]:hover::after,
+[class*="nameGlow_"]::after,
+[class*="convenienceGlowGradient_"]:hover::after,
+[class*="convenienceGlowGradient_"]::after {
      display: none !important;
 }
 
-[class*="members_"] [class*="name_"],
+[class*="members_"] [class*="name_"] {
+     font-family: var(--font-primary) !important;
+     font-variant: normal !important;
+     font-style: normal !important;
+     text-shadow: none !important;
+     font-size: 101%;
+     animation: none !important;
+     transform: none !important;
+     -webkit-text-stroke: 0 !important;
+     color: color-mix(currentcolor 100%, white 28%);
+     filter: contrast(150%);
+     -webkit-text-fill-color: unset !important; 
+}
 [class*="scroller__"] [class*="username_"] {
+     position: relative;
      font-family: var(--font-primary) !important;
      font-variant: normal !important;
      font-style: normal !important;
@@ -1176,16 +1249,20 @@ foreignObject[mask*="status-online"] .status_a423bd {
      animation: none !important;
      transform: none !important;
      -webkit-text-stroke: 0 !important;
-     filter: brightness(110%);
-     -webkit-text-fill-color: unset !important; 
+     filter: brightness(1.45) contrast(198%) hue-rotate(5deg); /* same as the colormix. I HOPE?!?!? */
+     -webkit-text-fill-color: unset !important;
 }
+
 
       /* Roles with gradient - recolor to first color of the gradient, because FUCK YOU DISCORD I HATE GRADIENTS */
 
 [class*="members_"] [class*="twoColorGradient_"],
 [class*="members_"] [class*="usernameGradient_"],
 [class*="scroller__"] [class*="twoColorGradient_"],
-[class*="scroller__"] [class*="usernameGradient_"] {
+[class*="scroller__"] [class*="usernameGradient_"],
+[class*="convenienceGlowGradient_"]:hover::before,
+[class*="convenienceGlowGradient_"]:hover::after,
+[class*="convenienceGlowGradient_"] {
     background-color: var(--custom-gradient-color-1) !important;
     background-image: none !important;
     -webkit-text-fill-color: transparent !important;
@@ -1193,6 +1270,8 @@ foreignObject[mask*="status-online"] .status_a423bd {
     -webkit-background-clip: text !important;
     mask: none !important;
     -webkit-mask: none !important;
+    color: transparent !important;
+    filter: brightness(1.4) contrast(198%) hue-rotate(5deg);
 }
 
 /* ADDITION - WHITE BUTTONS */
@@ -1214,7 +1293,13 @@ foreignObject[mask*="status-online"] .status_a423bd {
      background: none !important;
 }
 
+
 /* ADDITION - BIGGER BUTTONS (+ more margin) */
+
+.item_c1e9c4 {
+     margin-top: 5px;
+}
+
 
 .clickable__81391 { /* buttons on top - mail and help */
      padding: 3px;
@@ -1237,14 +1322,16 @@ foreignObject[mask*="status-online"] .status_a423bd {
 
 .listItemWrapper__91816 .wrapper_cc5dd2 /*discord button*/ {
      margin: 5px;
-}
+/*     height: 50px !important;
+     top: 5px !important; */
+} /* commented stuff on top is an outdated fix. Its here just in case something breaks again and i'll aply the thing once more */
 
 /* Choose an account menu reskinning - new code port */
 
   .characterBackground_eb4069 {
     /* Remove discord logo */
     & > .logoWithText_eb4069 {
-      opacity: 0 !important;
+      display: none !important;
    }
     & > .artwork_eb4069 {
       display: none !important;
@@ -1262,8 +1349,17 @@ foreignObject[mask*="status-online"] .status_a423bd {
         no-repeat;
      image-rendering: pixelated;
      image-rendering: crisp-edges;
+     z-index: 1;
     }
 }
+
+
+    /* Steam logo clipping inside authbox fix */
+
+.animatedDiv_b97385 {
+     z-index: 2;
+}
+
 
 /* Separator - new code port */
 .guildSeparator__252b6, /* Servers and home separator */
@@ -1274,7 +1370,9 @@ foreignObject[mask*="status-online"] .status_a423bd {
 .divider_d06995, /* Inbox message date separator */
 .separator_aa8da2, /* Server settings separator */
 .tabs__50387:after, /* VC connection separator */
-.vc-divider /* Vencord dividers */ {
+.vc-divider, /* Vencord dividers */ 
+.separator_c1e9c4, /* popover separator */ 
+.divider__04d5b /* study hub separator */{
   height: 0 !important;
   background-color: transparent !important;
   border-left: 0 !important;
@@ -1312,6 +1410,12 @@ foreignObject[mask*="status-online"] .status_a423bd {
   border-left: 1px solid var(--dark-border) !important;
   border-right: 1px solid var(--light-border) !important;
 }
+
+/* Fix folders having extra space with space-xs set to 5 instead of 8 - new code port */
+.folderGuildsList__48112 {
+  --space-xs: 8px !important;
+}
+
 
 /* compact chat list - from vencord css snippets */
 
@@ -1360,7 +1464,20 @@ foreignObject[mask*="status-online"] .status_a423bd {
 }
 .linkBottom__2ea32 {margin-left: 4px;}
 
+  /* Replace home button - new code port */
 
+.wrapper__6e9f8 .childWrapper__6e9f8 svg {
+    display: none !important;
+}
+
+.wrapper__6e9f8 .childWrapper__6e9f8::after {
+    content: var(--custom-logo) !important;
+    left: 100% !important;
+    width: 40px;  
+    height: 40px;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+}
 
 
 
@@ -1433,7 +1550,7 @@ background-repeat: no-repeat;
         -webkit-text-fill-color: var(--custom-accent) !important;
 }
 /* ↑↓ - butons on fully open profile (activity and stuff) */
-[class="tabBarItem__37bfc item_aa8da2 selected_aa8da2"]::after {
+[class*="tabBarItem__37bfc item_aa8da2"]::after {
         display: none !important;
 }
 
@@ -1453,8 +1570,15 @@ background-repeat: no-repeat;
 	background: var(--custom-secondary-accent-brighter) !important;
 }
 
+.container_a76561 .button_a22cb0 { /* study hub button */
+	background: var(--custom-secondary-accent) !important;
+}
+.container_a76561 .button_a22cb0:hover {
+	background: var(--custom-secondary-accent-brighter) !important;
+}
 
-     /* BLURPLE RECOLOR THROUGH STYLES COLORS */
+
+     /* BLURPLE & OTHER COLORS REPAINTED THROUGH STYLES COLORS */
 
 * {
     --blurple-36: var(--custom-accent) !important; /* Email reveal blurple text */
@@ -1462,12 +1586,17 @@ background-repeat: no-repeat;
     --blurple-50: var(--custom-secondary-accent) !important; /* Add friend button, other buttons, sliders. Probably the most important and versatile color? */
     --blurple-60: var(--custom-secondary-accent-brighter) !important; /* Same buttons as b-50, but when hovered */
     --blurple-26: var(--custom-accent) !important; /* other text. E.G - Add an account blurple text */
+    --blurple-65: var(--custom-accent) !important; /* Login button pressed - probably other blurple buttons when pressed too? */
 
-    --brand-500: var(--custom-secondary-accent) !important; /* The most important blurple */
+    --brand-500: var(--custom-secondary-accent) !important; /* The most important blurple, in my code, it acts as a failsafe, in case other blurple colors break */
 
     --opacity-blurple-24-hsl: var(--blurpleHSL-hue) calc(var(--saturation-factor, 1)*var(--blurpleHSL-sat)) var(--blurpleHSL-lig) !important; /* [INT 1] Me styles (reaction background) */
 
     --blue-new-37: var(--custom-accent) !important;    /* Probably most versatile blue text color? */
 
     --icon-voice-muted: var(--custom-accent) !important; /* Speaks for itself. E.G - muted mic icon */
+
+    --red-new-46: var(--custom-notifications) !important; /* Notifications. E.G - a red counter of messages that a friend sent you */
+
+    --neutral-43: var(--custom-accent) !important; /* spoiler blur borders */
 }
