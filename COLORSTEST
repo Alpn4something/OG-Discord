@@ -1,0 +1,1744 @@
+/* Colors setup */
+* {
+    --custom-logo: url(https://dom1torii.github.io/VGUICord/src/assets/steam-logo.svg) !important;
+    --custom-logo-text: url(https://dom1torii.github.io/VGUICord/src/assets/steam-logo-text.png) !important;
+
+    /* bunch of font changes in case it might won't work without em */
+    --font-primary: var(--font) !important;
+    --font-display: var(--font) !important;
+    --font-headline: var(--font) !important;
+    --font-code: var(--font) !important; 
+    
+
+
+    --background-message-hover: var(--custom-secondary-bg) !important;
+
+    --checkbox-background-default: var(--custom-secondary-bg) !important;
+
+    --primary-800: var(--custom-bg) !important;
+
+    --interactive-icon-default: var(--custom-somebuttons) !important;
+
+    --app-background-frame: var(--custom-bg) !important;
+    --background-primary: var(--custom-bg) !important;
+    --background-modifier-selected: var(--custom-secondary-accent) !important;
+    --background-tertiary: var(--custom-bg) !important;
+    --background-accent: var(--custom-bg) !important;
+    --bg-base-tertiary: var(--custom-bg) !important;
+    --custom-channel-members-bg: var(--custom-bg) !important;
+    --background-base-low: var(--custom-bg) !important;
+    --background-base-lower: var(--custom-bg) !important;
+    --background-base-lowest: var(--custom-bg) !important;
+    --bg-overlay-chat: var(--custom-bg) !important;
+    --custom-app-top-bar-height: 35px !important;
+    --scrollbar-auto-thumb: var(--custom-bg) !important;
+    --scrollbar-thin-thumb: var(--custom-bg) !important;
+    --background-mod-subtle: var(--custom-bg) !important;
+    --background-surface-high: var(--custom-bg) !important;
+    --background-surface-higher: var(--custom-bg) !important;
+    --background-surface-highest: var(--custom-bg) !important;
+    --background-floating: var(--custom-bg) !important;
+    --bg-surface-overlay: var(--custom-bg) !important;
+    --bg-surface-overlay-tmp: var(--custom-bg) !important;
+    --bg-surface-raised: var(--custom-bg) !important;
+    --background-secondary-alt: var(--custom-bg) !important;
+    --background-secondary: var(--custom-bg) !important;
+    --background-floating: var(--custom-bg) !important;
+    --bg-mod-subtle: var(--custom-bg) !important;
+    --card-primary-bg: var(--custom-bg) !important;
+    --modal-background: var(--custom-bg) !important;
+    --modal-footer-background: var(--custom-bg) !important;
+    --interactive-muted: grey !important;
+    --button-secondary-background: var(--custom-bg) !important;
+    --autocomplete-bg: var(--custom-bg) !important;
+    --status-danger: var(--custom-secondary-accent) !important;
+    --input-background: var(--custom-secondary-bg) !important;
+
+    --shadow-high: transparent !important;
+
+    --text-normal: var(--custom-text) !important;
+    --text-primary: var(--custom-text) !important;
+    --text-tertiary: var(--custom-secondary-text) !important;
+    --text-muted: var(--custom-secondary-text) !important;
+    --chat-text-muted: var(--custom-secondary-text) !important;
+    --channels-default: var(--custom-secondary-text) !important;
+    --header-secondary: var(--custom-secondary-text) !important;
+    --header-primary: var(--custom-text) !important;
+
+    --interactive-normal: var(--custom-secondary-text) !important;
+    --interactive-hover: var(--custom-text) !important;
+
+    --icon-primary: var(--custom-text) !important;
+    --icon-secondary: var(--custom-secondary-text) !important;
+    --icon-tertiary: var(--custom-secondary-text) !important;
+    --channel-icon: var(--custom-secondary-text) !important;
+
+
+
+    --reaction-border-reacted-default: red !important;
+
+
+    -webkit-font-smoothing: none !important;
+    -moz-osx-font-smoothing: grayscale !important;
+    font-smooth: never !important;
+    text-rendering: optimizeSpeed !important;
+ 
+    --custom-cutout-radius: 0 !important;
+
+}
+
+
+@property --steam-logo {
+    syntax: "true | false";
+    initial-value: true;
+    name: "Steam Logo";
+    note: "Enables steam logo instead of discord logo";
+}
+
+
+
+
+* {
+    border-radius: 0 !important;
+}
+
+.visual-refresh .container_c8ffbb, .visual-refresh .header_f37cb1, .visual-refresh .container__9293f, .sidebarList__5e434 {
+    border: none !important;
+    
+}
+
+.tierIconLocked_a36dee {
+    color: grey;
+}
+
+.selected_bf202d {
+    background-color: var(--custom-secondary-accent) !important;
+}
+
+:where(.visual-refresh) .interactive__972a0:hover {
+    background-color: rgba(0, 0, 0, 0.3) !important;
+}
+
+:where(.visual-refresh) .interactive__972a0.selected_bf202d:hover {
+    background-color: var(--custom-secondary-accent) !important;
+}
+
+
+.visual-refresh .container_f37cb1 {
+    z-index: 10 !important;
+}
+
+
+/* remove server header hover blur and border */
+:where(.visual-refresh) .bannerVisible_f37cb1 .headerEllipseBackdrop_f37cb1,
+:where(.visual-refresh) .bannerVisible_f37cb1 .headerGlass_f37cb1 {
+    backdrop-filter: none !important;
+    border: none !important;
+}
+
+.member_c8ffbb {
+    background-color: transparent !important;
+}
+
+.title_c38106 {
+    justify-content: start;
+}
+
+.visual-refresh .title__85643 {
+    margin: 0px 5px 0px 5px;
+}
+
+.visual-refresh .chatContent_f75fb0,
+.visual-refresh .container_f37cb1,
+.visual-refresh .container__9293f,
+.visual-refresh .channelHeader__35a7e,
+.visual-refresh .messages__1ccd1,
+.visual-refresh .scroller__99e7c,
+.listItemWrapper__91816,
+.members_c8ffbb,
+.visual-refresh .scroller__629e4,
+.visual-refresh .content__5e434{
+    margin: 5px;
+}
+
+.visual-refresh .channelTextArea_f75fb0 {
+    background-color: var(--custom-secondary-bg) !important;
+}
+
+.public-DraftEditorPlaceholder-hasFocus,
+input:focus::placeholder {
+    color: var(--custom-accent) !important;
+}
+
+
+:where(.visual-refresh) .themedBackground__74017,
+.visual-refresh .searchBar_c322aa,
+.visual-refresh .scroller__629e4,
+.members_c8ffbb,
+.visual-refresh .scroller__99e7c,
+textarea,
+div:not([class="_201d5e8a3c09670a-contents"]):not([class="a16aea1526925c2c-value"]):not([class="a16aea1526925c2c-value a16aea1526925c2c-multi"]):has(> input),
+.checkbox_f525d3 {
+    background-color: var(--custom-secondary-bg) !important;
+    border: 1px solid !important;
+    border-color: var(--dark-border) var(--light-border) var(--light-border) var(--dark-border) !important;
+}
+
+
+.standardSidebarView__23e6b {
+    background-color: transparent;
+}
+
+.emojiWrapper__4cbea {
+    margin-left: -35px;
+}
+
+.emojiItem_fc7141[tabindex="0"] {
+    background-color: var(--custom-secondary-bg) !important;
+}
+    .listItem__650eb > div:not(div.folderHeader__48112) .wrapper_cc5dd2,
+    .iconContainer_a76561 /* study hub icon */  {
+        box-shadow: 
+            1px 0 0 0 var(--dark-border),
+            -1px 0 0 0 var(--light-border),
+            0 1px 0 0 var(--dark-border),
+            0 -1px 0 0 var(--light-border) !important;
+    }
+
+    foreignObject {
+        mask: none !important;
+    }
+}
+
+.folderButton__48112[aria-expanded="false"] {
+    box-shadow: 
+        1px 0 0 0 var(--dark-border),
+        -1px 0 0 0 var(--light-border),
+        0 1px 0 0 var(--dark-border),
+        0 -1px 0 0 var(--light-border);
+}
+
+
+
+.folderButton__48112[aria-expanded="true"] {
+    box-shadow: none;
+}
+
+/* Apply regular box shadow */
+.folderButton__48112[aria-expanded="false"] {
+    box-shadow: 
+    1px 0 0 0 var(--dark-border),
+    -1px 0 0 0 var(--light-border),
+    0 1px 0 0 var(--dark-border),
+    0 -1px 0 0 var(--light-border) !important;
+    border: none !important;
+}
+
+/* this is regular borders setup! */
+.visual-refresh .chatContent_f75fb0,
+.listItemWrapper__91816,
+.visual-refresh .container_f37cb1,
+.visual-refresh .toolbar__9293f .iconWrapper__9293f,
+.visual-refresh .button__85643,
+::-webkit-scrollbar-thumb,
+.app__160d8 button:not(.clearStatusButton__958c7):not(.attachButton__0923f):not(.barButtonMain__0f481),
+.message__5126c .buttonsInner__5126c,
+.floatingBars__74017:empty+.stackedBars__74017:nth-child(2),
+:where(.visual-refresh) .tooltipPrimary_c36707,
+:where(.visual-refresh) .popout_a16aea:not(.popoutPositionTop_a16aea),
+.card__5cea9,
+.loadMoreButton__5cea9,
+.visual-refresh .box_f8c98c,
+.visual-refresh .cardPrimary__73069,
+.metadataContainer_c7f964,
+.visual-refresh .rootWithShadow__49fc1,
+.boostContainer_ceb06a,
+.visual-refresh .shopCard_c3d04b,
+.loadingPopout__58f1c,
+.visual-refresh .messageGroupWrapper_e8b59c,
+.visual-refresh .jumpButton_e8b59c,
+.visual-refresh .messagesPopoutWrap_e8b59c,
+.visual-refresh .container_d9c882,
+.visual-refresh .container__6764b,
+.item__133bf,
+:where(.visual-refresh) .top_aa8da2 .item_aa8da2,
+.controls_ab6641 > div,
+.visual-refresh .container__2692d,
+.channel__427f0,
+.visual-refresh .channelHeader__35a7e,
+.visual-refresh .messages__1ccd1,
+.tertiary__06eda,
+.visual-refresh .autocompleteAttached__6b0e0,
+.reactionTooltip_b49891,
+.container__55c99,
+.popoutContainer__0f481,
+.authedAppV2__50a54,
+.card__39ec2,
+.card__9d597,
+.item_caf372,
+.comboBoxInputContainer__0edde,
+.subnavContainer_e4d939,
+.outer_ab8609,
+.selected__58105,
+.visible__58105,
+.button__63abb.back__63abb,
+.button__63abb.forward__63abb,
+.pictureInPictureWindow__6341f,
+.closeButton_d6f39b,
+.container_a62383,
+.progressContainer__0d0f9, /* Server boost progress */
+.popover_f84418, /* Some popovers */
+.menu_c1e9c4 div[role="group"] .item_c1e9c4, /* Popout group items */
+.customItem_c1e9c4, /* Popout emotes */
+.contentWrapper__08434, /* GIFs / Stickers / Emojis */
+.navButton__08434, /* GIFs etc. navigation buttons */
+.reactionTooltip_bbcccb, /* Reaction tooltips */
+.bannerButton_fb7f94, /* Profile banner buttons */
+/*.blobContainer_e5445c, this is server icon. No longer needed since server folder box shadow also does the same effect (lol?)*/
+.buttonWrapper__24af7.attachButtonInner__0923f, /* Message attachment button */
+#popout_3067 .item_c1e9c4, /* Message attachments popout buttons */
+.buttons__74017 > div, /* Right side message text area buttons */
+div[aria-label="Poll options"] > div, /* Poll option buttons */
+.card_dc2e44, /* Some cards, for example: channel settings -> integrations -> webhooks*/
+.card_aae012, /* Some other cards like "Add your first app" on top of the text channel */
+.card_a2332b, /* Some other cards like nitro tiers */
+.container__39957, /* Send a gift "1 gift away container" thingy */
+.closeButton_c2b141, /* Close button in settings and other places */
+.overlay_c0bea0, /* Profile buttons */
+.container__62dd3, /* Some profile cards, for example: favorite game */
+.tabBar__133bf > div, /* Friends tabs */
+.actionButton_f8fa06, /* Friend action buttons */
+.addFriendInputWrapper__72ba7, /* Wrapper in add friend tab */
+.bar__7aaec, /* "New Unreads" thingy */
+.reactionBtn__23977, /* React button */
+.reaction__23977:has([aria-pressed="false"]), /* Reactions (non reacted) */
+.nonVisualMediaItem_f4758a, /* Text file message container */
+.mainCard_f369db:not(.header_f369db), /* Forum cards */
+.pill_a2c9e8, /* Forum tag pills */
+.tagsButton_f369db, /* Forum tags dropdown */
+.sortDropdown_f369db, /* Forum sort dropdown */
+.container__5808f, /* Forum tags popup? */
+.container__01ae2, /* VC Chat */
+.utilButtonWrapper_b5b7aa, /* Quest top right buttons */
+.messagePreviewContainer_f96002, /* Message previews */
+.message_fd14e0, /* Delete message preview */
+.container__8a031, /* Start conversation */
+.topPill_aa8da2 > div, /* Message requests tabs */
+.preview__6b741, /* Accessibility preview */
+.box__376cb, /* Inbox messages */
+.popout_a16aea, /* Voice devices dropdown */
+.selectDropdown__0edde, /* Other settings dropdowns for example noise suppression */
+.optionButtonWrapper__270d7:not(:has([aria-pressed="true"])), /* Server customization options */
+.container_dca174, /* Server profile preview */
+.sidebar__23e6b, /* Server settings sidebar */
+.pillContainer__9e06a > div, /* Screenshare top buttons */
+.sourceTypeButtons_b23ee9 > div, /* Screenshare source buttons */
+.autocomplete__6b0e0, /* Autocomplete popup */
+.buttonSection__1405b, /* VC buttons */
+.disconnect_f1ceac, /* VC disconnect button */
+.contentWrapper__9c62c, /* Apps popup */
+.sectionRowsContentContainer__927fc > div, /* App in apps popup */
+.card__88264, /* Event cards */
+.linkButton__972a0, /* Home left menu buttons */
+:where(.outer_c0bea0).user-profile-sidebar.user-profile-sidebar-redesign, /* User profile sidebar */
+.bottomBar__0f481, /* Unread messages popup */
+.visual-refresh .vc-plugins-info-card, /* Vencord base cards */
+.visual-refresh .vc-plugin-stats, /* Vencord plugin stats */
+.vc-card-primary, /* Vencord cards */
+.vc-addon-card, /* Vencord plugin cards */
+.authBox__921c5, /* Login box */
+.list__920b8, /* Login users list */
+.content__5e434, /* Main content */
+.content_f75fb0 > .chatContent_f75fb0, /* Chat box */
+.panels__5e434, /* User panel */
+.buttons__37e49 button, /* User panel buttons */
+.actionButtons_e131a9 button, /* User panel VC buttons */
+.clickable__9293f, /* Top channel bar buttons */
+.role_af3987, /* Profile roles */
+.menu_c1e9c4, /* Some popout menus */
+.pollContainer_b7e1cb, /* Polls */
+.container_f69538, /* Poll results? */
+.wrapper__72c38, /* Some input wrappers*/
+.friendNoteTextArea__72ba7, /* Add friend optional input */
+.switchIndicator_a28278, .vc-switch-indicator, /* Switches */
+.header_f369db, /* Forum search box */
+.checkboxIndicator__714a9, /* Checkboxes */
+.input_ac6cb0, /* Start conversation input */
+code, /* code */
+.button_a22cb0, /* Login buttons + .modalHeaderButtons_b92f52 for some reason?!?!? */
+.vc-notification-root,
+.vc-notification-close-btn,
+.folderGroupBackground__48112,
+.container_a76561, /* study groups panel */
+.itemCard__7e549, /* activity pannel */
+.card__4b63d, /* server boost card */
+.listItem_a04c02, /* boosting faq */
+.outer_c0bea0.user-profile-popout, /* profile */
+.toolbar_bba883,  /* popover with text tweaks */
+.layerContainer__59d0d .header__432f4,   /* layeredcontainer pinned msgs header */
+.layerContainer__59d0d .messagesPopout__432f4, /* layeredcontainer pinned mgsg stuff below header */
+.layerContainer__59d0d .messageGroupWrapper__432f4, /* same as 2 things on top, but messages this time */
+.container__16eb0, /* search on server popout */
+.container__8cb2e, /* inbox popout */
+.headerTitle__06f80 .friendRequestsButton_c7a32c, /* inbox friend invites button */
+.customizationSection_ace4f5 .button__201d5.lookFilled__201d5.colorBrand__201d5.sizeSmall__201d5.grow__201d5, /* buttons in profile editing that for some reason didn't use borders before i added em here */
+.nameplatePreview__62b8c,
+
+
+body {
+    transition: none !important;
+    border: 1px solid !important;
+    border-color: var(--light-border) var(--dark-border) var(--dark-border) var(--light-border) !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+  /* a box shadow for folders and servers on the left */
+.folderButton__48112[aria-expanded="false"],
+.listItem__650eb > span:has(.blobContainer_e5445c) {
+    box-shadow:
+    0 -1px 0 var(--light-border), 1px 0 0 var(--dark-border),
+    0 1px 0 var(--dark-border), -1px 0 0 var(--light-border);
+}
+
+/* .iconWrapper__9293f fix cuz its not only friends icon */
+.page__5e434 .iconWrapper__9293f:not(.clickable__9293f) /* friends/chat icon on top when friends button/chat is open */ {
+    width: 30px;
+    margin-right: 10px !important;
+    border: 1px solid !important;
+    border-color: var(--light-border) var(--dark-border) var(--dark-border) transparent !important;
+    /* context time: for some reason, border doesn't apply on the left side sometimes, so i made a janky fix */
+    box-shadow: inset 1px 0 0 0 var(--light-border) !important;
+}
+
+/* exteremely smol button tweak */
+
+.headerTitle__06f80 .friendRequestsButton_c7a32c {
+    height: 30px;
+    width: 14px; /* its actually 30 px idfk why its supposed to be 14 in code */
+}
+/* reactions border remake */
+.visual-refresh .reaction__23977:not(.reactionMe__23977),
+.visual-refresh .reaction_f8896c:not(.reactionMe__f8896c) /* reactions on forum */ {
+    transition: none !important;
+    border: 1px solid !important;
+    border-color: var(--light-border) var(--dark-border-reaction) var(--dark-border-reaction) var(--light-border) !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
+.visual-refresh .reaction__23977.reactionMe__23977,
+.visual-refresh .reaction_f8896c.reactionMe_f8896c /* reactionme for forums */ {
+    transition: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+    border: 1px solid !important;
+    border-color: var(--light-border-reaction) var(--dark-border-reaction) var(--dark-border-reaction) var(--light-border-reaction) !important;
+    filter: drop-shadow(1px 1px 1px var(--custom-secondary-accent)) !important;
+}
+
+
+/* Apply secondary background (brighter, in case of my code) - new code port */
+.embedFull__623de, /* Embeds */
+.pollContainer_b7e1cb, /* Polls */
+.container_f69538, /* Poll results? */
+.input__72ba7, /* Enter a username input in add friend */
+.friendNoteTextArea__72ba7, /* Add friend optional input */
+.switchIndicator_a28278, .vc-switch-indicator, /* Switches */
+.quote__122e4, /* Quotes */
+code, /* code */ 
+.linkButton__972a0,
+.channelTextArea_f75fb0 .buttons__37e49,
+.buttonWrapper__24af7.attachButtonInner__0923f, /* Message attachment button */
+#popout_3067 .item_c1e9c4, /* Message attachments popout buttons */
+.buttons__74017 > div /* Right side message text area buttons */ {
+  background-color: var(--custom-secondary-bg-brighter) !important;
+}
+code {
+   padding: 5px;
+}
+
+[class*='contentHeader_e9e3ed theme-dark theme-darker images-dark'],
+body {
+    transition: none !important;
+    border: 1px solid !important;
+    border-color: transparent transparent var(--dark-border) transparent !important;
+    box-shadow: none !important;
+}
+
+/* vencord close button tweaks cuz it looks ugly with borders */
+.vc-notification-close-btn {
+    padding: 5px;
+    margin-bottom: 5px !important;
+    opacity: 1 !important;
+}
+.vc-notification-close-btn svg {
+        color: var(--custom-somebuttons);
+        margin-bottom: -3px !important
+}
+
+/* inverted borders setup! */
+.app__160d8 button:active,
+.visual-refresh .button__85643:active,
+.visual-refresh .toolbar__9293f .iconWrapper__9293f:active,
+.visual-refresh .container_f37cb1:active,
+.listItemWrapper__91816:active,
+.loadMoreButton__5cea9:active,
+.customItem_c1e9c4:active
+.actionButton_f8fa06:active,
+.item__133bf:active,
+.selected_aa8da2,
+.select_a16aea,
+.radioIndicator__88a69,
+.wrapper__44b0c,
+.button__63abb.back__63abb.disabled__63abb,
+.button__63abb.forward__63abb.disabled__63abb,
+[class*='button_a22cb0 md_a22cb0 primary_a22cb0 hasText_a22cb0 fullWidth_a22cb0'],
+[class*="voiceSectionGuildImage__"],
+.avatar_c19a55,
+.gameCoverImage__1a3d6, /* game banner from "favorite game" and other stuff */ 
+.headerIcon__00943, /* game icon in active now */ 
+[class*="largeImage_"], /* game icon in active now, big one */ 
+.gameSectionIcon__00943, /* game icon in active now, big one (alt) */
+[class*="avatarContainer"], /* avatars in server popover (aka icons for users when hovering on a server) */
+.container_e928f4, /* Profile on left - "in voice" box */ 
+.container_e928f4 .circle_e928f4 img, /* avatar borders inside that "in voice box */
+.icon_c2a763, /* "game collection" game mini icons */
+.imagePosition_ef9ae7.clickableImage__39ec2, /* "playing" game icon */
+.userAvatar__55bab.avatar__07f91.avatarSmall__07f91 /* small avatar in voice chats */ {
+    border: 1px solid !important;
+    border-color: var(--dark-border) var(--light-border) var(--light-border) var(--dark-border) !important;
+    box-shadow: none !important;
+}
+
+/* avatars on server popover fix */
+.container__183c2 [class*="avatarContainer"] {
+    margin-left: 3px !important;
+    margin-right: 0 !important;
+    background-color: color-mix(var(--alpn4-custom-bg-black) 100%, white 70%) !important;
+}
+/* Убираем затемнение у контейнера аватарок */
+.container__183c2 [class*="avatarContainer"] {
+    margin-left: 3px !important;
+    margin-right: 0 !important;
+}
+.container__183c2 [class*="avatarContainer"] img {
+    background-color: var(--alpn4-custom-bg-black) !important;
+}
+
+/* avatar on top of the chat fix BECAUSE DISCORD DOESN'T RENDER ON DANG LINE WHYYYYYYY */
+
+.avatar_f75fb0 {
+    border: 1px solid !important;
+    border-color: var(--dark-border) var(--light-border) var(--light-border) var(--dark-border) !important;
+}
+
+.avatar_f75fb0 .wrapper__44b0c {
+    border: none !important;
+}
+
+/* settings main stuff fix */
+
+[class*='content_e9e3ed'] {
+    transition: none !important;
+    border: 1px solid !important;
+    border-color: var(--light-border) var(--dark-border) transparent var(--light-border) !important;
+    box-shadow: none !important;
+    outline: none !important;
+    margin-top: 16px !important;
+    margin-right: 5px !important;
+}
+
+.scroller__6131a {
+    margin-right: 2px !important;
+}
+
+/* mic stuff unrounding fix */
+
+[class~='notches__06283 gray__06283'] {
+   border-radius: 0px !important;
+   color: red;
+}
+
+.container_cd2100 {
+    border: none !important;
+}
+
+/* hide tooltip pointers */
+:where(.visual-refresh) .tooltipPointer_c36707.tooltipPointerBg_c36707,
+:where(.visual-refresh) .tooltipTop_c36707 .tooltipPointer_c36707:not(.tooltipPointerBg_c36707),
+:where(.visual-refresh) .tooltipRight_c36707 .tooltipPointer_c36707:not(.tooltipPointerBg_c36707) {
+    display: none !important;
+}
+
+.uploadInput__0923f {
+    visibility: hidden;
+}
+
+.visual-refresh .childWrapperNoHoverBg__6e9f8, .visual-refresh .tabBar__133bf > div:hover, .visual-refresh .topPill_aa8da2 .themed_aa8da2.item_aa8da2:hover:not(.disabled_aa8da2) {
+    background-color: transparent;
+    color: white;
+}
+
+.tabBar_ab6641 {
+    display: flex;
+    align-items: center;
+}
+
+:where(.visual-refresh) .top_aa8da2 .item_aa8da2 {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.children__9293f::after {
+    background: var(--custom-bg) !important;
+}
+
+:where(.visual-refresh) .wrapper__2ea32 > div:hover, :where(.visual-refresh) .link__2ea32:active{
+    background-color: rgba(0, 0, 0, 0.3) !important;
+}
+
+
+/* Slightly rewritten https://refact0r.github.io/system24/src/unrounding.css */
+    *,
+    *::before,
+    *::after {
+        --radius-lg: 0px !important;
+        border-radius: 0 !important;
+    }
+
+    /* Server online/offline counter unrounding fix */
+
+.vc-membercount-container {
+    position: relative !important;
+}
+
+.vc-membercount-online-count circle,
+.vc-membercount-total-count circle {
+    display: none !important;
+}
+
+.vc-membercount-container:has(.vc-membercount-online-count)::after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 9px;
+    width: 10px;  /* размер квадрата */
+    height: 10px;
+    background-color: var(--online-2); 
+    border: 1px solid;
+    border-color: var(--dark-border) var(--light-border) var(--light-border) var(--dark-border);
+}
+
+.vc-membercount-container:has(.vc-membercount-total-count)::after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 5px;
+    width: 10px;  /* размер квадрата */
+    height: 10px;
+    background-color: var(--offline-2); 
+    border: 1px solid;
+    border-color: var(--dark-border) var(--light-border) var(--light-border) var(--dark-border);
+}
+
+
+     /* Server icon and members icon unrounding fix - in Active Now (right side) */
+[class*="voiceSectionGuildImage__"] {
+    -webkit-mask: none !important;
+}
+[class*="partyMember_"] {
+    -webkit-mask: none !important;
+    margin-left: 5px !important;
+}
+    /* Server icon and members icon unrounding fix - in Active Now (right side) - FIX END */
+
+    .svg_cc5dd2 > mask,
+    .svg__44b0c > rect,
+    .svg__44b0c > circle,
+    .svg__44b0c > g,
+    .svg__44b0c rect[mask='url(#:rhi:)'],
+    .avatar__20a53 .status_a423bd {
+        display: none;
+    }
+
+    .mask__68edb > foreignObject,
+    .svg__44b0c > foreignObject,
+    .svg__2338f > foreignObject {
+        mask: none;
+    }
+
+    .wrapper__44b0c:has(rect)::after,
+    .container__1ce5d:has(.status_a423bd)::after {
+        content: '';
+        display: block;
+        position: absolute;
+        height: 8%;
+        width: 100%;
+        bottom: -10%;
+        left: -1px;        
+        border: 1px solid !important;
+        border-color: var(--dark-border) var(--light-border) var(--light-border) var(--dark-border) !important;
+    }
+      /* server members list - status bar appearance fix */
+     .members_c8ffbb .wrapper__44b0c:has(rect)::after,
+     .members_c8ffbb .container__1ce5d:has(.status_a423bd)::after {
+        left: -1px !important;
+        width: 31px !important; 
+        height: 3px !important;
+    }
+      /* same but with friends list because of ONE DANG PIXEL. IHATECSSIHATECSSIHATECSS */
+     [class*="scroller__"] .wrapper__44b0c:has(rect)::after,
+     [class*="scroller__"] .container__1ce5d:has(.status_a423bd)::after,
+     .panels__5e434 .wrapper__44b0c:has(rect)::after, 
+     .panels__5e434 .container__1ce5d:has(.status_a423bd)::after {
+        bottom: -5px !important;
+        left: -1px !important;
+        width: 32px !important; 
+        height: 3px !important;
+    }
+      /* same but with avatar on top of the chat - STILL BECAUSE OF 1 PIXEL */
+     .upperContainer__9293f .wrapper__44b0c:has(rect)::after,
+     .upperContainer__9293f .container__1ce5d:has(.status_a423bd)::after{
+        bottom: -3px !important;
+        left: -1px !important;
+        width: 20px !important; 
+        height: 1px !important;
+    }
+
+      /* same but with MUTUAL FRIENDS when browsing fully open profile */  
+     .tabPanelScroller__37bfc .wrapper__44b0c:has(rect)::after,
+     .tabPanelScroller__37bfc .container__1ce5d:has(.status_a423bd)::after{
+        bottom: -5px !important;
+        left: -1px !important;
+        width: 40px !important; 
+        height: 3px !important;
+    }
+      /* Yeah, again... Same but with Edit profile page */ 
+     .previewsContainer__44061 .wrapper__44b0c:has(rect)::after,
+     .previewsContainer__44061 .container__1ce5d:has(.status_a423bd)::after{
+        bottom: -10px !important;
+        left: -1px !important;
+        width: 80px !important; 
+        height: 6px !important;
+    }
+
+    .wrapper__44b0c:has(rect[fill='#45a366'])::after,
+    .container__1ce5d:has(.status_a423bd[style='background-color: rgb(67, 162, 90);'])::after {
+        background: var(--online-2) !important;
+        outline: 0px solid;
+    }
+    .wrapper__44b0c:has(rect[fill='#da3e44'])::after {
+        background: var(--dnd-2) !important;
+        outline: 0px solid;
+    }
+    .wrapper__44b0c:has(rect[fill='#ffc04e'])::after {
+        background: var(--idle-2) !important;
+        outline: 0px solid;
+    }
+    .wrapper__44b0c:has(rect[fill='#84858d'])::after {
+        background: var(--offline-2) !important;
+        outline: 0px solid;
+    }
+    .wrapper__44b0c:has(rect[fill='#9147ff'])::after {
+        background: var(--streaming-2);
+        outline: 0px solid;
+    }
+
+    .lowerBadge_cc5dd2 {
+        border: 2px solid var(--background-base-lower);
+        bottom: -4px;
+        right: -4px;
+    }
+    .upperBadge_cc5dd2 {
+        border: 2px solid var(--background-base-lower);
+        top: -4px;
+        right: -4px;
+    }
+
+    .slider__3f21e > rect[rx='10'] {
+        rx: 0 !important;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        border-radius: 0 !important;
+    }
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+    width: 7px !important;
+    height: 7px !important;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--alpn4-custom-bg-brighter) !important;
+    border-radius: 0 !important;
+}
+
+.visual-refresh .scroller_ef3116::-webkit-scrollbar, .scroller_affa7e::-webkit-scrollbar {
+    display: none !important;
+}
+
+/* Adds borders to any buttons added in the top bar area */
+div.trailing_c38106 div[role=button] { 
+
+    background-color: var(--alpn4-custom-bg-brighter) !important;
+    border: 1px solid !important;
+    border-color: var(--light-border) var(--dark-border) var(--dark-border) var(--light-border) !important;
+}
+/*Adds border and padding to the inbox button*/
+div.trailing_c38106 .clickable_c99c29 {
+    background-color: var(--alpn4-custom-bg-brighter) !important; 
+    padding: 0px;
+    border: 1px solid !important;
+    border-color: var(--light-border) var(--dark-border) var(--dark-border) var(--light-border) !important;
+}
+
+/* --- COMPACT USER PANEL --- */
+
+.visual-refresh section.panels__5e434 {
+  left: calc(var(--custom-guild-list-width) + var(--space-xxs));
+  width: calc(100% - var(--custom-guild-list-width) - var(--space-xs));
+  box-sizing: border-box;
+
+  .actionButtons_e131a9 button {
+    padding: 0;
+  }
+
+  /* GameActivityToggle Fix (delete if you don't use) */
+  /* .container__37e49 {
+    padding: var(--space-xxs);
+    gap: var(--space-4);
+    >.buttons__37e49 {
+      gap: 0;
+    }
+    >.avatarWrapper__37e49 {
+      min-width: 32px !important;
+      >.avatar__37e49 {
+        scale: 0.9;
+      }
+    }
+  } */
+}
+nav.guilds__5e434 {
+  margin-bottom: 0 !important;
+}
+
+/* --- DEBLOATERS --- */
+
+/* mainDEBLOATERS-Number1.css */
+
+/* hide premium elements in friends list */
+li > div:has(a[href="/store"]),
+li > div:has(a[href="/shop"]),
+li > div:has(a[href="/quest-home"]),
+div[aria-label="Send a gift"]
+{
+  display: none;
+}
+
+/* hide premium profile decorations and effects */
+svg[class*=avatarDecoration],
+img[class*=avatarDecoration],
+div[class*=profileEffects]
+{
+  display: none;
+}
+
+/* hide premium elements in user settings */
+div[class*=container__]:has(h2[class*=extrabold_]),
+div[class*=upsell],
+div[class*=premium]
+{
+  display: none;
+}
+
+/* hide premium avatar selection in user settings */
+li:has(div[class*=hasPremium])
+{
+  display: none;
+}
+
+/* remove the blank space left by the the premium avatar selection option that was hidden */
+.optionsList_edf440
+{
+  grid-template-columns: none;
+}
+
+/* hide premium nameplate images and gradients */
+img[src*=collectibles],
+{
+  display: none;
+}
+
+/* Remove profile effects */
+[class*='profileEffects'] {
+    display: none;
+}
+
+/* Remove pulse gradient in VC */
+[class*='pulseGradient'] {
+    display: none;
+}
+
+/* CUSTOM - GETTING RID OF NITRO MINI BANNER ON THE LEFT */
+[class*='fadeIn'],
+[class*='container_df39b2'] {
+    display: none !important;
+    mask: none !important;
+    mask-image: none !important;
+    -webkit-mask-image: none !important;
+}
+
+/* CUSTOM - RASKULACHIVANIE PROFILE DECO */
+[class*='profileFrameLayer'],
+.backgroundImage__9c3be {
+     display: none !important;
+} {
+    display: none !important;
+}
+
+[class*='interactive_'] {
+    mask-image: none !important;
+    -webkit-mask-image: none !important;
+}
+
+--custom-nameplate-neutral: none
+
+/* mainDEBLOATERS-Number2.css */
+
+
+/* CUSTOM - no nitro editing pannel when you fully open your profile */
+
+.panel_b08638.editingPanel__9c3be.isExpanded__9c3be {
+    display: none !important;
+    border: none !important;
+margin: -10px !important;
+}
+[class*="panel_b08638"][class*="editingPanel__"][class*="isExpanded__"] {
+    display: none !important;
+    border: none !important;
+    margin: 100px !important;
+}
+
+/* CUSTOM - no "go to shop" crap in edit profile page */
+
+.container__8279f {
+    display: none !important;
+}
+/* CUSTOM - badges removal */
+
+.container__8061a {
+    display: none !important;
+}
+
+
+
+/* CUSTOM - server boost settings tweaks */
+.container_a62383 {
+    display: none !important;
+}
+
+/* CUSTOM - no nitro wishlist, bc fu discord */
+
+.tabBarItem__37bfc[aria-label="Вишлист"],
+.tabBarItem__37bfc[aria-label="Wishlist"] {
+    display: none !important;
+}
+
+/* Remove the Activity bar */
+[class*='membersGroup']:has([role=button]),
+[class*='member'] [class*='container']:has([class*='badges']) {
+    display: none;
+}
+
+/* Remove clan tags */
+[class*='clanTag']:has([class*='badge']),
+[class*='badge_'],
+[class*='tagText__10651'] {
+    display: none;
+}
+
+/* Remove nitro nameplates */
+.container__4bbc6 {
+    display: none;
+}
+
+/* Remove labels on nitro button in settings */
+[class*='premiumTrialBadge']:has([role*='img']) {
+    display: none;
+}
+
+/* Remove labels on nitro button in DMs */
+[class*='premiumTrialBadge']:has([class*='eyebrow']) {
+    display: none;
+}
+
+/* CUSTOM - no gradient on some wrappers */
+
+[class*="container_a62383"][class*="popoverGradientWrapper_"]::before {
+    display: none !important;
+}
+/* Remove pulse gradient in VC */
+[class*='pulseGradient'] {
+    mask: none;
+}
+
+/* Remove avatar decorations */
+.avatarDecoration__44b0c {
+    display: none;
+}
+
+/* Remove profile effects */
+[class*='profileEffects'] [class*='inner']:has([src*='https://cdn.discordapp.com/assets/content/']) {
+    display: none;
+}
+
+/* Top bar fix (from css snippets - titlebar header topic by Mogay) */
+
+.title_c38106 {
+     display: none;
+}
+
+/* give me right color for profile sidebar */
+
+.themeContainer__7f9c0,
+.user-profile-popout {
+    background-color: var(--custom-bg) !important;
+}
+.themeContainer__5be3e {
+    background-color: var(--custom-bg) !important;
+}
+
+/* NO VENCORD ANIME SHIT */
+
+[class*='vc-special'] {
+    display: none !important
+}
+
+/* Buttons color fix (+whishlist button debloater) */
+
+.item_caf372,
+.audioButtonParent__5e764,
+.button__67645,
+[class*="backForwardButtons"] [class*="forward__"]:not([class*="disabled__"]),
+[class*="backForwardButtons"] [class*="back__"]:not([class*="disabled__"]),
+[class="button_a22cb0 md_a22cb0 icon-only_a22cb0"],
+.container_a76561,
+.actionButton_f8fa06,
+.mainCardContainer_f369db, /* this one isn't actually a button, but a forum search bar. I had to put it somewhere */ 
+[class*="tab__06f80 item_aa8da2 brand_aa8da2"] /* inbox buttons */ {
+    background-color: var(--alpn4-custom-bg-brighter) !important;
+}
+    /* banner buttons redone */
+.wrapper_da5890 .bannerButton_fb7f94 {
+    box-shadow:
+    0 -1px 0 var(--light-border), 1px 0 0 var(--dark-border),
+    0 0 0 transparent, -1px 0 0 var(--light-border) !important;
+
+}
+.bannerButton_fb7f94 {
+    background-color: var(--alpn4-custom-bg-black) !important;
+}
+.bannerButton_fb7f94:hover {
+    background-color: color-mix(var(--alpn4-custom-bg-black) 100%, white 10%) !important;
+}
+   /* banner buttons end */
+
+
+.tabBarItem__37bfc.item_aa8da2 {
+    background-color: var(--alpn4-custom-bg-brighter) !important;
+    padding: 5px;
+    margin-right: -15px;
+}
+
+ /* Tooltips (popovers) borders */
+[class^="caretGradient_"],
+.container_a62383 {
+     fill: var(--custom-bg) !important;
+}
+
+[class^="caretIcon_"] {
+     filter: drop-shadow(0 1px 0px var(--light-border));
+}
+.toolbar_bba883::before {
+ filter: drop-shadow(0 1px 0px var(--dark-border));
+}
+
+
+
+
+.tooltip_fa450d {
+  box-shadow:
+    inset 1px 1px 0 0 var(--light-border),
+    inset -1px -1px 0 0 var(--dark-border);
+}
+
+.subnavContainer_e4d939 {
+    background-color: var(--alpn4-custom-bg-black) !important;
+}
+
+[class*='vc-card'] {
+    background-color: var(--custom-bg) !important;
+}
+ [class*='vc-addon'] {
+    background-color: var(--alpn4-custom-bg-brighter);
+}
+.card__39ec2,
+.card__9d597,
+.closeButton_d6f39b {
+   background-color: var(--alpn4-custom-bg-brighter) !important;
+   box-shadow: none !important;
+   shadow: none !important;
+}
+.container__06b03 {
+  display: none !important;
+} 
+.overlay_c0bea0,
+.cardsList__9d597 {
+  background-color: var(--alpn4-custom-bg-brighter) !important;
+  box-shadow: none !important;
+  shadow: none !important;
+}
+.menuItem_ce8328 { 
+    &::after {
+        display: block;
+        position: relative;
+        height: 1px;
+        width: 266px;
+        inset-inline-start: -12px;
+        inset-block-start: -3px;
+        background: var(--light-border);
+    }
+}
+
+
+/* "Online" color fix */
+
+foreignObject[mask*="status-online"] .status_a423bd {
+    background-color: rgb(84,165,196) !important;
+}
+
+/* banner and hiding mistakes lol */
+
+.profile__9c3be {
+    box-shadow: none !important;
+    border: 1px solid !important;
+    border-color: var(--light-border) var(--dark-border) transparent var(--light-border) !important;
+}
+
+.button__9a406.menuButton_cf2d33 {
+    border: 1px solid !important;
+    border-color: var(--light-border) var(--dark-border) transparent var(--light-border) !important;
+    background: var(--alpn4-custom-bg-brighter) !important;
+}
+
+[class*='banner'] {
+/* background-color: var(--alpn4-custom-bg-brighter) !important; COMMENTED CUZ IT SOMETIMES RECOLORS WHOLE PROFILE */
+    transition: none !important;
+    border: 1px solid !important;
+    border-color: transparent transparent var(--dark-border) transparent !important;
+    shadow: none;
+    mask: none !important;
+    background-image: none !important;
+}
+[class*='banner__'][style*='background-color'] {
+    background-image: none !important;
+    background-color: var(--alpn4-custom-bg-brighter) !important;
+}
+.winButtons_c38106.winButtonsWithDivider_c38106,
+.winButtons_c38106 {
+        padding-top: 3px !important;
+        padding-right: 5px !important;
+}
+
+.winButtons_c38106.winButtonsWithDivider_c38106::before {
+        display: block;
+        position: relative;
+        height: 45px;
+        width: -1px;
+        margin-right: 12px;
+        top: -2px;
+        background: var(--light-border);
+}
+
+[class*="outer_"] [class*="wrapper__"] img,
+[class*="contents_"] [class*="avatar_"],
+[class*="panels"] [class*="wrapper__"] img,
+[class*="container"] [class*="wrapper__"] img,
+[class*="section"] [class*="wrapper__"] img {
+    background-color: var(--alpn4-custom-bg-black) !important;
+}
+
+[class*="banner"] [class*="gifTag_"] {
+    display: none !important;
+}
+
+[class*='tile_d6271c noVerticalMargin_d6271c noHorizontalMargin_d6271c'],
+.background_fb62e2,
+.iconWrapper__9293f,
+.icon__9293f,
+.modalHeaderButtons_b92f52,
+.container__62dd3 {
+    background-color: var(--alpn4-custom-bg-brighter) !important;
+}
+
+.inner_c0bea0 {
+    mask-image: none !important;
+}
+
+.inner_ab8609,
+.outer_ab8609 {
+   background-color: var(--alpn4-custom-bg-black) !important;
+}
+
+/* discover button simple fixes */
+
+.gradientBackground_e9ef78 {
+    display: none !important;
+}
+
+.tab__65d41,
+.tabBarItem_d6f9e9.item_aa8da2.brand_aa8da2 /* settings page buttons */ {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+    margin-top: 10px !important;
+    height: 30px;
+    background-color: var(--alpn4-custom-bg-brighter) !important;
+}
+.tab__65d41::after {
+    display: none !important;
+}
+.tab__65d41.selected_aa8da2 {
+    color: var(--custom-accent) !important;
+}
+
+.tabBarItem_d6f9e9.item_aa8da2.brand_aa8da2::after /* settings page buttons */ {
+    display: none !important;
+}
+
+/* inbox ::after disable */
+[class="tab__06f80 item_aa8da2 brand_aa8da2"]::after,
+[class="tab__06f80 item_aa8da2 brand_aa8da2 selected_aa8da2"]::after {
+    display: none !important;
+}
+
+
+/* MY COMMUNIST MANIFESTO */
+
+* {
+    --custom-display-name-styles-main-color: unset !important;
+    --custom-display-name-styles-light-1-color: unset !important;
+    --custom-display-name-styles-light-2-color: unset !important;
+    --custom-display-name-styles-dark-1-color: unset !important;
+    --custom-display-name-styles-dark-2-color: unset !important;
+    --custom-display-name-styles-toon-stroke-color: unset !important;
+    --custom-display-name-styles-neon-stroke-color: unset !important;
+    --custom-display-name-styles-wrap: 0 !important;
+    --custom-display-name-styles-font-opacity: unset !important;
+    --custom-profile-frame-container-width: unset !important;
+    --custom-profile-frame-overflow-top: unset !important; 
+    --custom-profile-frame-overflow-bottom: unset !important; 
+    --custom-profile-frame-overflow-horizontal: unset !important;
+}
+
+* {
+     font-family: var(--font-primary) !important;
+     font-variant: normal !important;
+     font-style: normal !important;
+     text-shadow: none !important;
+     font-weight: normal !important;
+     -webkit-text-stroke: 0 !important;
+}
+
+[class*="displayNameRow_"] [class*="container_"],
+[class*="displayNameRow_"] [class*="container_"] [class*="innerContainer_"],
+[class*="gummyLetter_"],
+[class^="displayNameTrailing__"],
+[class^="newRocker__"] [class^="username_"],
+[class^="dnsFont__"] [class^="username_"],
+[class*="displayNameRow__"] [data-text-variant*="bold"],
+[class*="displayNameRow__"] [data-text-variant*="semibold"] {
+     font-family: var(--font-primary) !important;
+     font-variant: normal !important;
+     font-style: normal !important;
+     text-shadow: none !important;
+     animation: none !important;
+     background: none !important;
+     -webkit-text-fill-color: var(--custom-text) !important;
+     font-weight: normal !important;
+     transform: none !important;
+     mask: none !important;
+     font-width: normal !important;
+     border: none !important;
+     -webkit-text-stroke: 0 !important;
+}
+
+[class*="nameGlow_"],
+[class*="nameGlow_"]:hover::after,
+[class*="nameGlow_"]::after,
+[class*="convenienceGlowGradient_"]:hover::after,
+[class*="convenienceGlowGradient_"]::after {
+     display: none !important;
+}
+
+[class*="members_"] [class*="name_"] {
+     font-family: var(--font-primary) !important;
+     font-variant: normal !important;
+     font-style: normal !important;
+     text-shadow: none !important;
+     font-size: 101%;
+     animation: none !important;
+     transform: none !important;
+     -webkit-text-stroke: 0 !important;
+     color: color-mix(currentcolor 100%, white 28%);
+     filter: contrast(150%);
+     -webkit-text-fill-color: unset !important; 
+}
+[class*="scroller__"] [class*="username_"] {
+     position: relative;
+     font-family: var(--font-primary) !important;
+     font-variant: normal !important;
+     font-style: normal !important;
+     text-shadow: none !important;
+     animation: none !important;
+     transform: none !important;
+     -webkit-text-stroke: 0 !important;
+     filter: brightness(1.45) contrast(198%) hue-rotate(5deg); /* same as the colormix. I HOPE?!?!? */
+     -webkit-text-fill-color: unset !important;
+}
+
+
+      /* Roles with gradient - recolor to first color of the gradient, because FUCK YOU DISCORD I HATE GRADIENTS */
+
+[class*="members_"] [class*="twoColorGradient_"],
+[class*="members_"] [class*="usernameGradient_"],
+[class*="scroller__"] [class*="twoColorGradient_"],
+[class*="scroller__"] [class*="usernameGradient_"],
+[class*="convenienceGlowGradient_"]:hover::before,
+[class*="convenienceGlowGradient_"]:hover::after,
+[class*="convenienceGlowGradient_"] {
+    background-color: var(--custom-gradient-color-1) !important;
+    background-image: none !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+    -webkit-background-clip: text !important;
+    mask: none !important;
+    -webkit-mask: none !important;
+    color: transparent !important;
+    filter: brightness(1.4) contrast(198%) hue-rotate(5deg);
+}
+
+/* ADDITION - WHITE BUTTONS */
+[class="iconWrapper__9293f clickable__9293f"] .icon__9293f,
+[class="icon_d98031 iconWrapper__9293f clickable__9293f"] .icon_9293f, /* NOT selected buttons on top of the chat */
+.clickable__81391, /* buttons on top - mail and help */
+.button__63abb.back__63abb.disabled__63abb,
+.button__63abb.back__63abb,
+.button__63abb.forward__63abb,
+.button__63abb.forward__63abb.disabled__63abb, /* left-right arrows on the top left */
+.button__67645.buttonChevron__5e764.enabled__67645.button__201d5.lookBlank__201d5.colorBrand__201d5.grow__201d5.button__67645.buttonChevron__5e764,
+.lottieIcon__5eb9b.lottieIconColors__5eb9b,
+[class*="connection"] .button__67645 .lottieIcon__5eb9b svg path,
+.icon__9293f,
+[class="tabBarItem__37bfc item_aa8da2"]
+.icon_a22cb0,
+.actionButton_f8fa06 svg,
+.activityIcon_b1f768.rowIcon_b1f768,
+.vc-membercount-voice-icon,
+.vc-membercount-container .vc-membercount-voice {
+     fill: var(--custom-somebuttons) !important;
+     color: var(--custom-somebuttons) !important;
+     background: none !important;
+}
+
+   /* .vc-membercount-voice-icon more margin */
+.vc-membercount-voice-icon {
+     margin-right: -5px;
+}
+
+   /* Profile on left - "in voice" styling */
+.container_e928f4::before {
+     background: var(--alpn4-custom-bg-black) !important;
+}
+
+
+
+/* ADDITION - BIGGER BUTTONS (+ more margin) */
+
+.item_c1e9c4 {
+     margin-top: 5px;
+}
+
+[class*="tab__06f80 item_aa8da2 brand_aa8da2"] /* inbox buttons */ {
+     margin-right: 5px;
+     margin-left: 5px;
+}
+
+.iconWrapper__9293f /* friends icon on top when friends button is open */ {
+     margin-right: 5px;
+}
+
+
+.clickable__81391 { /* buttons on top - mail and help */
+     padding: 3px;
+     margin: -2px;
+     margin-top: 1px;
+     padding-top: 2px;
+}
+
+.button__63abb.back__63abb.disabled__63abb,
+.button__63abb.back__63abb,
+.button__63abb.forward__63abb,
+.button__63abb.forward__63abb.disabled__63abb { /* arrows - left/right on top left */
+     margin-left: 5px;
+     margin-top: 3px;
+     margin-right: 1px;
+}
+.button__67645.buttonChevron__5e764.enabled__67645.button__201d5.lookBlank__201d5.colorBrand__201d5.grow__201d5.button__67645.buttonChevron__5e764 {
+     margin-left: 3px;
+} /* extra buttons for mic and headphones on user area */
+
+.listItemWrapper__91816 .wrapper_cc5dd2 /*discord button*/ {
+     margin: 5px;
+/*     height: 50px !important;
+     top: 5px !important; */
+} /* commented stuff on top is an outdated fix. Its here just in case something breaks again and i'll aply the thing once more */
+
+    /* additional forum search fix, because it just wants go broken for no reason, huh? */
+[class="headerContainer_f369db"] .stack_dbd263 /* "new post" button */ {
+      margin-left: 5px;
+}
+[class="headerContainer_f369db"] .title_d9be46 /* "search or create post" text */ {
+    padding-left: 5px !important;
+}
+
+/* Choose an account menu reskinning - new code port */
+
+.characterBackground_eb4069 {
+    /* Remove discord logo */
+    & > .logoWithText_eb4069 {
+      display: none !important;
+   }
+    & > .artwork_eb4069 {
+      display: none !important;
+   }
+
+    /* Add steam logo */
+    &::after {
+      content: "";
+      position: absolute;
+      top: 20px;
+      left: -350px;
+      width: 900px;
+      height: 100px;
+      background: var(--custom-logo-text) center center / contain
+        no-repeat;
+     image-rendering: pixelated;
+     image-rendering: crisp-edges;
+     z-index: 1;
+    }
+}
+
+
+    /* Steam logo clipping inside authbox fix */
+
+.animatedDiv_b97385 {
+     z-index: 2;
+}
+
+
+/* Separator - new code port */
+.guildSeparator__252b6, /* Servers and home separator */
+.sectionDivider_e6b769, /* Home dividers */
+.sectionDivider__629e4, /* Channels dividers */
+.divider__1de9c, /* Settings dividers */
+[data-list-item-id^="chat-messages___divider"]:has(.content__908e2):not([aria-label^="new"]), /* Message date separator */
+.divider_d06995, /* Inbox message date separator */
+.separator_aa8da2, /* Server settings separator */
+.tabs__50387:after, /* VC connection separator */
+.vc-divider, /* Vencord dividers */ 
+.separator_c1e9c4, /* popover separator */ 
+.divider__04d5b, /* study hub separator */
+.divider_cc6179 /* friends online separator */ {
+  height: 0 !important;
+  background-color: transparent !important;
+  border-left: 0 !important;
+  border-right: 0 !important;
+  border-top: 1px solid var(--dark-border) !important;
+  border-bottom: 1px solid var(--light-border) !important;
+}
+.divider_cc6179, /* friends online separator */ 
+.divider_f369db /* forums separator */ {
+  opacity: 0.65 !important;
+}
+
+
+
+.customizationSection_ace4f5 /* edit profile box. border used as a separator */ {
+  border: none !important;
+}
+
+/* Separator using after */
+.section__409aa, /* Settings categories */
+.divider__13533 /* Autocomplete separator */ {
+  &::after {
+    content: "";
+    height: 0;
+    width: 100%;
+    border-left: 0 !important;
+    border-right: 0 !important;
+    border-top: 1px solid var(--dark-border) !important;
+    border-bottom: 1px solid var(--light-border) !important;
+    margin-block: 5px;
+  }
+}
+.customizationSection_ace4f5::after /* edit profile separator */ {
+    content: '';
+    display: block;
+    height: 0px;
+    background: transparent;
+    width: calc(100% + 10px);
+    border-top: 1px solid var(--dark-border);
+    border-bottom: 1px solid var(--light-border);
+    margin-top: 20px;
+    margin-left: -5px !important;
+    margin-bottom: -20px;
+}
+
+ /* old separators be gone - new code port */
+.section__409aa, /* Settings categories */
+.channelHeader__5d903 {
+  border: none !important;
+}
+
+/* Vertical separator - new code port */
+.separator__841c8, /* Left of reply close button */
+.divider_f369db, /* forums separator */
+.divider_bba883 /* popover with text tweaks separator */ {
+  width: 0 !important;
+  border-top: 0 !important;
+  border-bottom: 0 !important;
+  border-left: 1px solid var(--dark-border) !important;
+  border-right: 1px solid var(--light-border) !important;
+}
+
+/* Fix folders having extra space with space-xs set to 5 instead of 8 - new code port */
+.folderGuildsList__48112 {
+  --space-xs: 8px !important;
+}
+
+
+/* compact chat list - from vencord css snippets */
+
+.unread__2ea32 {
+  width: 2px;
+  height: 8px;
+  left: 10px;
+  right: auto;
+  top: 14px;
+}
+.modeSelected__2ea32 .link__2ea32 {background-color:var(--custom-accent-compactchat) !important;}
+.link__2ea32 {
+  border-radius: 0px !important;
+  padding: 0px !important;
+  padding-left: 16px !important;
+  &::before {
+    width: 1px;
+    left: 10px;
+    background-color: transparent;
+  }
+  &:hover {background-color: var() !important;}
+  .icon__2ea32 {scale: 0.6;}
+  .linkTop__2ea32 {gap: 4px;}
+}
+.wrapper__2ea32 {margin: 0px;}
+.name__2ea32,
+.overflow_b0dfc2,
+.username__07f91 {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.45;
+}
+.typeThread__2ea32 {
+  margin-left: 10px !important;
+  .link__2ea32 {padding-left: 20px !important;}
+}
+.containerDefault__29444,
+.wrapper__29444,
+.content__07f91,
+.list_c3cd7d {padding: 0px !important;}
+.list_c3cd7d {padding-left: 16px !important;}
+.sectionDivider__629e4 {
+  margin: 4px !important;
+  margin-top: 8px !important;
+  width: 100% !important;
+}
+.linkBottom__2ea32 {margin-left: 4px;}
+
+  /* Replace home button - new code port */
+
+.wrapper__6e9f8 .childWrapper__6e9f8 svg {
+    display: none !important;
+}
+
+.wrapper__6e9f8 .childWrapper__6e9f8::after {
+    content: var(--custom-logo) !important;
+    left: 100% !important;
+    width: 40px;  
+    height: 40px;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+}
+
+/* edit profile double banner border fix */
+[class*="settingsPage"] .banner_f7e69e {
+    border-bottom: none !important;
+}
+
+[class*="settingsPage"] .avatarContainer__62b8c {
+    border: none !important;
+}
+
+/* YYYYYYYBasic burple recolor + some additionsYYYYYY */
+
+.redGlow__67645 {
+     background-color: var(--custom-accent-colormix) !important;
+       clip-path: none !important;
+}
+
+     /* Discord-shenanigans -- shitty button 2 recolor */
+
+.audioButtonParent__5e764.hasColorGlow__5e764 {
+background: linear-gradient(var(--custom-accent-colormix));
+background-position: 35px 0;
+background-size: calc(100% - 35px) 100%;
+background-repeat: no-repeat;
+}
+
+        /*--icon-voice-muted - secondary red glow replacer */
+
+
+.selected__58105 { /* selected guild/chats */
+     background-color: var(--custom-secondary-accent-brighter) !important;
+}
+
+[class="iconWrapper__9293f clickable__9293f selected__9293f"] .icon__9293f,
+[class="icon_d98031 iconWrapper__9293f clickable__9293f selected__9293f"] .icon__9293f /* selected buttons on top of the chat */ {
+     transform: scale(1.20);
+     color: var(--custom-secondary-accent-brighter) !important;
+     filter: drop-shadow(-1px -1px var(--dark-border)) drop-shadow(1px 1px var(--light-border)) !important;
+     background: none !important;
+}
+
+.clickable__81391.selected__81391 svg {
+     transform: scale(1.25);
+     color: var(--custom-secondary-accent-brighter) !important;
+     filter: drop-shadow(-1px -1px 0px var(--dark-border)) drop-shadow(1px 1px 0px var(--light-border));
+     background: none !important;
+}
+
+.wrapper__6e9f8.selected__6e9f8 .childWrapper__6e9f8, /* blurple discord main button */
+.wrapper__6e9f8:hover .childWrapper__6e9f8,
+.wrapper_cc5dd2 .selected__5bc7e, /* blurple DISCOVER button + ADD A SERVER button */
+.wrapper_cc5dd2:hover .discoveryIcon_ef3116 {
+        transform: scale(1.15);
+	background-color: var(--custom-secondary-accent) !important;   
+}
+
+
+.listItemWrapper__91816.selected__91816 { /* ADDITION PART 1 - GLOWING SELECTED MAIN BUTTON */
+       position: relative;
+       overflow: visible !important;
+}
+
+.listItemWrapper__91816.selected__91816::after { /* ADDITION PART 2 - GLOWING SELECTED MAIN BUTTON */
+       content: '';
+       position: absolute;
+       inset: 5px; 
+       box-shadow: 0 0 3px 1px var(--custom-secondary-accent);
+}
+
+.folderButton__48112 .svg_cc5dd2 svg { /* blurple server folder icon */
+       transform: scale(1.08);
+       color: var(--custom-secondary-accent) !important;
+       filter: drop-shadow(-1px -1px 0px var(--dark-border)) drop-shadow(1px 1px 0px var(--light-border)); 
+}
+
+[class="tabBarItem__37bfc item_aa8da2 selected_aa8da2"] [class="text-sm/semibold_cf4812 itemText_aa8da2"] {
+        -webkit-text-fill-color: var(--custom-accent) !important;
+}
+/* ↑↓ - butons on fully open profile (activity and stuff) */
+[class*="tabBarItem__37bfc item_aa8da2"]::after {
+        display: none !important;
+}
+
+.container__3f21e,	/* switch unchecked - devilbros code modded */	
+.switchIndicator_a28278 {
+	background-color: var(--custom-secondary-bg) !important;
+        transition: background-color 0.08s ease-out;
+        border: 1px solid !important;
+        border-color: var(--dark-border) var(--light-border) var(--light-border) var(--dark-border) !important;
+}				
+.container__3f21e.checked__3f21e, /* switch checked - devilbros code modded */	
+.switchIndicator_a28278:has(.thumb_a28278[style*="left: 24px"]) {
+	background-color: var(--custom-secondary-accent) !important;
+}
+.container__3f21e.checked__3f21e:hover,
+.switchIndicator_a28278:has(.thumb_a28278[style*="left: 24px"]):hover {
+	background: var(--custom-secondary-accent-brighter) !important;
+}
+
+.container_a76561 .button_a22cb0 { /* study hub button */
+	background: var(--custom-secondary-accent) !important;
+}
+.container_a76561 .button_a22cb0:hover {
+	background: var(--custom-secondary-accent-brighter) !important;
+}
+
+          /* unread pins on server */
+[class="iconBadge__9293f iconBadgeBottom__9293f iconBadgeStyleUnread__9293f"] {
+	background: var(--custom-secondary-accent-brighter) !important;
+        outline: 2px solid;
+        outline-color: var(--alpn4-custom-bg-brighter);
+}
+
+        /* some green icons recolor. for some goddamn reason, they don't use any --green colors. Certified discord moment */
+.icon_c9d15c path,
+.activityStatusText__972a0.activityCounter_c9d15c {
+	fill: var(--custom-accent) !important;
+        color: var(--custom-accent) !important;
+}
+
+     /* BLURPLE & OTHER COLORS REPAINTED THROUGH STYLES COLORS */
+
+* {
+    --blurple-36: var(--custom-accent) !important; /* Email reveal blurple text */
+    --blurple-14: var(--custom-accent) !important; /* Reaction numbers (e.g - you react to something with emoji) */
+    --blurple-50: var(--custom-secondary-accent) !important; /* Add friend button, other buttons, sliders. Probably the most important and versatile color? */
+    --blurple-60: var(--custom-secondary-accent-brighter) !important; /* Same buttons as b-50, but when hovered */
+    --blurple-26: var(--custom-accent) !important; /* other text. E.G - Add an account blurple text */
+    --blurple-65: var(--custom-accent) !important; /* Login button pressed - probably other blurple buttons when pressed too? */
+    --blurple-19: var(--custom-accent) !important; /* @PingName */
+
+    --brand-500: var(--custom-secondary-accent) !important; /* The most important blurple, in my code, it acts as a failsafe, in case other blurple colors break */
+
+    --opacity-blurple-24-hsl: var(--blurpleHSL-hue) calc(var(--saturation-factor, 1)*var(--blurpleHSL-sat)) var(--blurpleHSL-lig) !important; /* [INT 1] Me styles (reaction background) */
+
+    --blue-new-37: var(--custom-accent) !important;    /* Probably most versatile blue text color? */
+    --blue-new-27: transparent !important; /* focus color in email field. i don't like it */
+
+    --icon-voice-muted: var(--custom-accent) !important; /* Speaks for itself. E.G - muted mic icon */
+
+    --red-new-46: var(--custom-notifications) !important; /* Notifications. E.G - a red counter of messages that a friend sent you */
+
+    --green-new-40: var(--online-2) !important;
+
+    --neutral-43: var(--custom-accent) !important; /* spoiler blur borders */
+}
+
+
+
+
+
