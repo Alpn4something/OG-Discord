@@ -1407,7 +1407,8 @@ foreignObject[mask*="status-online"] .status_a423bd {
 .button_f7ecac, /* reaction popover */
 .iconContainerLeft_c1e9c4, /* rmb popover icons */
 .actionMenuButton__8dc78 path, /* connected apps ". . ." icon */
-.hoverButton__06ab4 svg /* edit text popover icons */ {
+.hoverButton__06ab4 svg, /* edit text popover icons */
+.vc-icon {
      fill: var(--custom-somebuttons) !important;
      color: var(--custom-somebuttons) !important;
      background: none !important;
@@ -1679,7 +1680,7 @@ foreignObject[mask*="status-online"] .status_a423bd {
 
 /* settings text uses other color */
 .item_caf372:not(.active_caf372) .itemContent_caf372 .text-md\/medium_cf4812 {
-    color: (--custom-secondary-text-brighter) !important;
+    color: var(--custom-secondary-text-brighter) !important;
 }
 
 /* vencord <code> fix */
@@ -1832,3 +1833,8 @@ z-index: 2;
 
     --neutral-43: var(--custom-accent) !important; /* spoiler blur borders */
 }
+
+
+
+
+
