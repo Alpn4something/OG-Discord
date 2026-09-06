@@ -130,6 +130,7 @@
 
 
 /* remove server header hover blur and border */
+ /* isnt related to the thing above but i wanted to remove borders here */
 :where(.visual-refresh) .bannerVisible_f37cb1 .headerEllipseBackdrop_f37cb1,
 :where(.visual-refresh) .bannerVisible_f37cb1 .headerGlass_f37cb1 {
     backdrop-filter: none !important;
@@ -157,7 +158,7 @@
 .listItemWrapper__91816,
 .members_c8ffbb,
 .visual-refresh .scroller__629e4,
-.visual-refresh .content__5e434{
+.visual-refresh .content__5e434 {
     margin: 5px;
 }
 
@@ -241,7 +242,8 @@ div:not([class="_201d5e8a3c09670a-contents"]):not([class="a16aea1526925c2c-value
 .visual-refresh .toolbar__9293f .iconWrapper__9293f,
 .visual-refresh .button__85643,
 ::-webkit-scrollbar-thumb,
-.app__160d8 button:not(.clearStatusButton__958c7):not(.attachButton__0923f):not(.barButtonMain__0f481),
+.app__160d8 button:not(.clearStatusButton__958c7):not(.attachButton__0923f):not(.barButtonMain__0f481):not([class*="barButton"]),
+.newMessagesBar__0f481.barBase__0f481, /* "new messages since..." bar on top of the chat */
 .message__5126c .buttonsInner__5126c,
 .floatingBars__74017:empty+.stackedBars__74017:nth-child(2),
 :where(.visual-refresh) .tooltipPrimary_c36707,
@@ -393,6 +395,18 @@ code, /* code */
 [class*="layer"] .container_d7bc5d, /* stream preview popover */
 .flexCenter_abf706, /* "added games" box */
 .upload_aa605f, /* message content preview (images and etc.) */
+.wrapper__02fc8, /* "Add a new connections" in connected apps */
+.accountAddWrapper__41de9, /* arrow icon in connected apps */
+.connection__41de9, /* box in connected apps */
+.appAvatarV2__92059, /* app icon in connected apps */
+.actionMenuButton__8dc78, /* connected apps ". . ." button */
+.iconContainer__0ecc4, /* activity privacy server icon */
+.guildsList__7db08 .stack_dbd263, /* server row in activity privacy */
+.vc-btn-base.vc-btn-primary.vc-btn-medium, /* vencord button */
+.vc-card-base, /* vencord box */
+.vc-btn-base, /* vencord other button */
+.tag_f7b6a0,
+
 body {
     transition: none !important;
     border: 1px solid !important;
@@ -431,7 +445,7 @@ body {
 .visual-refresh .reaction_f8896c:not(.reactionMe__f8896c) /* reactions on forum */ {
     transition: none !important;
     border: 1px solid !important;
-    border-color: var(--light-border) var(--dark-border-reaction) var(--dark-border-reaction) var(--light-border) !important;
+    border-color: var(--light-border) var(--dark-border) var(--dark-border) var(--light-border) !important;
     box-shadow: none !important;
     outline: none !important;
 }
@@ -462,8 +476,9 @@ code, /* code */
 .buttons__74017 > div /* Right side message text area buttons */ {
   background-color: var(--custom-secondary-bg-brighter) !important;
 }
+.guildsList__7db08 .stack_dbd263, /* server row in activity privacy */
 code {
-   padding: 5px;
+   padding: 5px !important;
 }
 
 [class*='contentHeader_e9e3ed theme-dark theme-darker images-dark'],
@@ -923,7 +938,7 @@ img[src*=collectibles],
     -webkit-mask-image: none !important;
 }
 
---custom-nameplate-neutral: none
+--custom-nameplate-neutral: none;
 
 /* mainDEBLOATERS-Number2.css */
 
@@ -1093,8 +1108,13 @@ margin: -10px !important;
 }
 
 [class^="caretIcon_"] {
-     filter: drop-shadow(0 1px 0px var(--light-border));
+    filter: drop-shadow(0 1px 0px var(--light-border));
 }
+
+[class*="caret--bottom"] .caretIcon_fa450d {
+    filter: drop-shadow(0 1px 0px var(--dark-border));
+}	
+
 .toolbar_bba883::before {
  filter: drop-shadow(0 1px 0px var(--dark-border));
 }
@@ -1226,7 +1246,7 @@ foreignObject[mask*="status-online"] .status_a423bd {
    background-color: var(--alpn4-custom-bg-black) !important;
 }
 
-/* discover button simple fixes */
+/* discover(+ actually more than discover) button simple fixes */
 
 .gradientBackground_e9ef78 {
     display: none !important;
@@ -1240,6 +1260,7 @@ foreignObject[mask*="status-online"] .status_a423bd {
     height: 30px;
     background-color: var(--alpn4-custom-bg-brighter) !important;
 }
+[class*="vc-settings-tab-bar-item item_aa8da2 brand_aa8da2"]::after,
 .tab__65d41::after {
     display: none !important;
 }
@@ -1381,9 +1402,11 @@ foreignObject[mask*="status-online"] .status_a423bd {
 .actionButton_f8fa06 svg,
 .activityIcon_b1f768.rowIcon_b1f768,
 .vc-membercount-voice-icon,
+.icon_caf372 path, /* settings icon */
 .vc-membercount-container .vc-membercount-voice,
 .button_f7ecac, /* reaction popover */
 .iconContainerLeft_c1e9c4, /* rmb popover icons */
+.actionMenuButton__8dc78 path, /* connected apps ". . ." icon */
 .hoverButton__06ab4 svg /* edit text popover icons */ {
      fill: var(--custom-somebuttons) !important;
      color: var(--custom-somebuttons) !important;
@@ -1403,6 +1426,15 @@ foreignObject[mask*="status-online"] .status_a423bd {
 
 
 /* ADDITION - BIGGER BUTTONS (+ more margin) */
+
+[class*="vc-settings-tab-bar-item item_aa8da2 brand_aa8da2"] {
+    padding: 5px !important;
+}
+
+
+.wrapper_e45a82 .partyMemberOverflow_e45a82 /* "+*number of member in vc*" text in "active now" */ {
+    margin-left: 8px !important;
+}
 
 .item_c1e9c4 {
      margin-top: 5px;
@@ -1506,14 +1538,17 @@ foreignObject[mask*="status-online"] .status_a423bd {
   border-top: 1px solid var(--dark-border) !important;
   border-bottom: 1px solid var(--light-border) !important;
 }
+    
+     /* make separators less eye-bleeding */
+.divider__92059, /* connected apps - privacy policy separator */
 .divider_cc6179, /* friends online separator */ 
 .divider_f369db, /* forums separator */
 .separator_f84418 /* reactions popover separator */ {
   opacity: 0.65 !important;
 }
 
-
-
+    /* remove borders used as lazy separator alternative by discord devs */
+.collapseable__2d143, /* connected apps pseudo-separator */
 .customizationSection_ace4f5 /* edit profile box. border used as a separator */ {
   border: none !important;
 }
@@ -1532,7 +1567,8 @@ foreignObject[mask*="status-online"] .status_a423bd {
     margin-block: 5px;
   }
 }
-.customizationSection_ace4f5::after /* edit profile separator */ {
+.collapseable__2d143::after, /* connected apps real separator */
+.customizationSection_ace4f5::after /* edit profile real separator */ {
     content: '';
     display: block;
     height: 0px;
@@ -1555,7 +1591,8 @@ foreignObject[mask*="status-online"] .status_a423bd {
 .separator__841c8, /* Left of reply close button */
 .divider_f369db, /* forums separator */
 .divider_bba883, /* popover with text tweaks separator */
-.separator_f84418 /* reactions popover separator */ {
+.separator_f84418, /* reactions popover separator */
+.divider__92059 /* connected apps - privacy policy separator */ {
   width: 0 !important;
   border-top: 0 !important;
   border-bottom: 0 !important;
@@ -1638,6 +1675,24 @@ foreignObject[mask*="status-online"] .status_a423bd {
 
 [class*="settingsPage"] .avatarContainer__62b8c {
     border: none !important;
+}
+
+/* settings text uses other color */
+.item_caf372:not(.active_caf372) .itemContent_caf372 .text-md\/medium_cf4812 {
+    color: (--custom-secondary-text-brighter) !important;
+}
+
+/* vencord <code> fix */
+
+.vc-text-base.vc-text-sm.vc-text-normal.vc-text-defaultColor code {
+    display: inline-block;
+}
+
+/* make use of new black text color - on new messages bar */
+.newMessagesBar__0f481 .span__0f481,
+.newMessagesBar__0f481 .markAsReadText__0f481,
+.newMessagesBar__0f481 .barButtonIcon__0f481 {
+    color: var(--custom-text-newmessagesbar);
 }
 
 /* YYYYYYYBasic burple recolor + some additionsYYYYYY */
