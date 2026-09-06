@@ -177,8 +177,8 @@ input:focus::placeholder {
 .members_c8ffbb,
 .visual-refresh .scroller__99e7c,
 textarea,
-div:not([class="_201d5e8a3c09670a-contents"]):not([class="a16aea1526925c2c-value"]):not([class="a16aea1526925c2c-value a16aea1526925c2c-multi"]):has(> input),
-.checkbox_f525d3 {
+div:not([class="_201d5e8a3c09670a-contents"]):not([class="a16aea1526925c2c-value"]):not([class="a16aea1526925c2c-value a16aea1526925c2c-multi"]):not(.vc-switch-checked):has(> input),
+.checkbox_f525d3:not(.vc-switch-checked)	 {
     background-color: var(--custom-secondary-bg) !important;
     border: 1px solid !important;
     border-color: var(--dark-border) var(--light-border) var(--light-border) var(--dark-border) !important;
@@ -382,13 +382,22 @@ code, /* code */
 .container__8cb2e, /* inbox popout */
 .headerTitle__06f80 .friendRequestsButton_c7a32c, /* inbox friend invites button */
 .customizationSection_ace4f5 .button__201d5.lookFilled__201d5.colorBrand__201d5.sizeSmall__201d5.grow__201d5, /* buttons in profile editing that for some reason didn't use borders before i added em here */
-.nameplatePreview__62b8c,
-
-
+.nameplatePreview__62b8c, /* a rectangle thingie in edit profile page */
+.hoverButton__06ab4, 
+.baseControlItem_dbfbe0, /* settings like appearance etc */
+.vc-settings-quickActions-pill, /* vencord button */
+.wrapper_f7ecac, /* edit file buttons */
+.iconWrapper__6eb54, /* play video button */
+.emptyChannelIcon__00de6, /* channel icon start */
+.role_afdfcc, /* role borders on top of empty channel */
+[class*="layer"] .container_d7bc5d, /* stream preview popover */
+.flexCenter_abf706, /* "added games" box */
+.upload_aa605f, /* message content preview (images and etc.) */
 body {
     transition: none !important;
     border: 1px solid !important;
     border-color: var(--light-border) var(--dark-border) var(--dark-border) var(--light-border) !important;
+    border-radius: 0px !important;
     box-shadow: none !important;
     outline: none !important;
 }
@@ -433,7 +442,7 @@ body {
     outline: none !important;
     border: 1px solid !important;
     border-color: var(--light-border-reaction) var(--dark-border-reaction) var(--dark-border-reaction) var(--light-border-reaction) !important;
-    filter: drop-shadow(1px 1px 1px var(--custom-secondary-accent)) !important;
+    filter: drop-shadow(1px 1px 1px var(--custom-reactions-dropshadow)) !important;
 }
 
 
@@ -504,7 +513,17 @@ body {
 .container_e928f4 .circle_e928f4 img, /* avatar borders inside that "in voice box */
 .icon_c2a763, /* "game collection" game mini icons */
 .imagePosition_ef9ae7.clickableImage__39ec2, /* "playing" game icon */
-.userAvatar__55bab.avatar__07f91.avatarSmall__07f91 /* small avatar in voice chats */ {
+.userAvatar__55bab.avatar__07f91.avatarSmall__07f91, /* small avatar in voice chats */
+.baseControlItem_dbfbe0 .icon_cf9ac1, /* icons for a thing in settings where i applied borders */
+.vc-switch-checked, /* vencord checkbox checked */
+.gifTag_f60819, /* "GIF" Popover */
+.gifFavoriteButton_b7e1cb, /* star (to mark as favorite) gif popover */
+.wrapper__260e1, /* voice channel info */
+.iconWrapper__4a3a5, /* channels followed/ webhooks icon */
+.file__0ccae, /* uploading files */
+.upload_aa605f .clickableMedia__41ea0 /* message clickable content (example - image mini preview) */
+
+{
     border: 1px solid !important;
     border-color: var(--dark-border) var(--light-border) var(--light-border) var(--dark-border) !important;
     box-shadow: none !important;
@@ -1020,17 +1039,31 @@ margin: -10px !important;
 /* Buttons color fix (+whishlist button debloater) */
 
 .item_caf372,
-.audioButtonParent__5e764,
+/*.audioButtonParent__5e764, this also recolors buttonChevron, but leaves an empty place on a left colored too, which is not what i really need*/
 .button__67645,
+.button__67645.buttonChevron__5e764:not(.redGlow__67645), /* chevron button without glow. It took me 1 hour to realize i could just do that... wow */
 [class*="backForwardButtons"] [class*="forward__"]:not([class*="disabled__"]),
 [class*="backForwardButtons"] [class*="back__"]:not([class*="disabled__"]),
 [class="button_a22cb0 md_a22cb0 icon-only_a22cb0"],
 .container_a76561,
 .actionButton_f8fa06,
 .mainCardContainer_f369db, /* this one isn't actually a button, but a forum search bar. I had to put it somewhere */ 
-[class*="tab__06f80 item_aa8da2 brand_aa8da2"] /* inbox buttons */ {
+[class*="tab__06f80 item_aa8da2 brand_aa8da2"], /* inbox buttons */
+.buttonsInner__5126c, /* reaction popover color */
+.hoverButtonGroup__06ab4, /* edit text popover color */
+.wrapper_f7ecac /* message content preview - buttons to edit */ {
     background-color: var(--alpn4-custom-bg-brighter) !important;
 }
+
+
+
+
+
+
+
+
+
+
     /* banner buttons redone */
 .wrapper_da5890 .bannerButton_fb7f94 {
     box-shadow:
@@ -1338,7 +1371,8 @@ foreignObject[mask*="status-online"] .status_a423bd {
 .button__63abb.back__63abb,
 .button__63abb.forward__63abb,
 .button__63abb.forward__63abb.disabled__63abb, /* left-right arrows on the top left */
-.button__67645.buttonChevron__5e764.enabled__67645.button__201d5.lookBlank__201d5.colorBrand__201d5.grow__201d5.button__67645.buttonChevron__5e764,
+.buttonChevron__5e764,
+/*.button__67645.buttonChevron__5e764.enabled__67645.button__201d5.lookBlank__201d5.colorBrand__201d5.grow__201d5.button__67645.buttonChevron__5e764*/
 .lottieIcon__5eb9b.lottieIconColors__5eb9b,
 [class*="connection"] .button__67645 .lottieIcon__5eb9b svg path,
 .icon__9293f,
@@ -1347,7 +1381,10 @@ foreignObject[mask*="status-online"] .status_a423bd {
 .actionButton_f8fa06 svg,
 .activityIcon_b1f768.rowIcon_b1f768,
 .vc-membercount-voice-icon,
-.vc-membercount-container .vc-membercount-voice {
+.vc-membercount-container .vc-membercount-voice,
+.button_f7ecac, /* reaction popover */
+.iconContainerLeft_c1e9c4, /* rmb popover icons */
+.hoverButton__06ab4 svg /* edit text popover icons */ {
      fill: var(--custom-somebuttons) !important;
      color: var(--custom-somebuttons) !important;
      background: none !important;
@@ -1470,7 +1507,8 @@ foreignObject[mask*="status-online"] .status_a423bd {
   border-bottom: 1px solid var(--light-border) !important;
 }
 .divider_cc6179, /* friends online separator */ 
-.divider_f369db /* forums separator */ {
+.divider_f369db, /* forums separator */
+.separator_f84418 /* reactions popover separator */ {
   opacity: 0.65 !important;
 }
 
@@ -1516,7 +1554,8 @@ foreignObject[mask*="status-online"] .status_a423bd {
 /* Vertical separator - new code port */
 .separator__841c8, /* Left of reply close button */
 .divider_f369db, /* forums separator */
-.divider_bba883 /* popover with text tweaks separator */ {
+.divider_bba883, /* popover with text tweaks separator */
+.separator_f84418 /* reactions popover separator */ {
   width: 0 !important;
   border-top: 0 !important;
   border-bottom: 0 !important;
@@ -1615,7 +1654,8 @@ background: linear-gradient(var(--custom-accent-colormix));
 background-position: 35px 0;
 background-size: calc(100% - 35px) 100%;
 background-repeat: no-repeat;
-}
+z-index: 2;
+} 
 
         /*--icon-voice-muted - secondary red glow replacer */
 
@@ -1729,7 +1769,7 @@ background-repeat: no-repeat;
     --blue-new-37: var(--custom-accent) !important;    /* Probably most versatile blue text color? */
     --blue-new-27: transparent !important; /* focus color in email field. i don't like it */
 
-    --icon-voice-muted: var(--custom-accent) !important; /* Speaks for itself. E.G - muted mic icon */
+    --icon-voice-muted: var(--custom-userarea-buttons-color) !important; /* Speaks for itself. E.G - muted mic icon */
 
     --red-new-46: var(--custom-notifications) !important; /* Notifications. E.G - a red counter of messages that a friend sent you */
 
@@ -1737,8 +1777,3 @@ background-repeat: no-repeat;
 
     --neutral-43: var(--custom-accent) !important; /* spoiler blur borders */
 }
-
-
-
-
-
