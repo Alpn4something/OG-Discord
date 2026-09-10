@@ -10,4 +10,5 @@ Theme is made not only for personal use, so i'll be maintaining it a fine amount
 
 # Things left to do:
 -Add more themes
+
 -Do a proper comparison to VGUICORD
