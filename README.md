@@ -36,7 +36,8 @@ It's quite hard to pin down what exactly did i change (everything? 600 lines in 
 ## Color schemes for OG-Discord (WIP)
 Theme comes in 6 Color schemes:
 
-### Steam2004 (default)
+<details>
+  <summary><h3>Steam2004 ALT</h3></summary>
 
 **friends**
 
@@ -45,6 +46,8 @@ Theme comes in 6 Color schemes:
 **sample**
 
 <img src="https://github.com/Alpn4something/OG-Discord/raw/Resources-branch/Showcase-stuff/Screenshots/steam2004%20sample.png" />
+
+</details>
 
 <details>
   <summary><h3>Steam2004 ALT</h3></summary>
