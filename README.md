@@ -43,11 +43,11 @@ Theme comes in 6 Color schemes:
 
   **friends**
 
-  <img src="https://raw.githubusercontent.com/Alpn4something/OG-Discord/Resources-branch/Showcase-stuff/Screenshots/steam2004%20friends.png" width="50%" height="50%" />
+  <img src="https://raw.githubusercontent.com/Alpn4something/OG-Discord/Resources-branch/Showcase-stuff/Screenshots/steam2004%20friends.png" width="70%" height="70%" />
 
   **sample**
 
-  <img src="https://raw.githubusercontent.com/Alpn4something/OG-Discord/Resources-branch/Showcase-stuff/Screenshots/steam2004%20sample.png" width="50%" height="50%" />
+  <img src="https://raw.githubusercontent.com/Alpn4something/OG-Discord/Resources-branch/Showcase-stuff/Screenshots/steam2004%20sample.png" width="70%" height="70%" />
 
 </details>
 
@@ -58,11 +58,11 @@ Theme comes in 6 Color schemes:
 
   **friends**
 
-  <img src="https://raw.githubusercontent.com/Alpn4something/OG-Discord/Resources-branch/Showcase-stuff/Screenshots/steam2004ALT%20friends.png" width="50%" height="50%" />
+  <img src="https://raw.githubusercontent.com/Alpn4something/OG-Discord/Resources-branch/Showcase-stuff/Screenshots/steam2004ALT%20friends.png" width="70%" height="70%" />
 
   **sample**
 
-  <img src="https://raw.githubusercontent.com/Alpn4something/OG-Discord/Resources-branch/Showcase-stuff/Screenshots/steam2004ALT%20sample.png" width="50%" height="50%" />
+  <img src="https://raw.githubusercontent.com/Alpn4something/OG-Discord/Resources-branch/Showcase-stuff/Screenshots/steam2004ALT%20sample.png" width="70%" height="70%" />
 
 </details>
 
@@ -73,11 +73,11 @@ Theme comes in 6 Color schemes:
 
   **friends**
 
-  <img src="https://raw.githubusercontent.com/Alpn4something/OG-Discord/Resources-branch/Showcase-stuff/Screenshots/catpFrappe%20friends.png" width="50%" height="50%" />
+  <img src="https://raw.githubusercontent.com/Alpn4something/OG-Discord/Resources-branch/Showcase-stuff/Screenshots/catpFrappe%20friends.png" width="70%" height="70%" />
 
   **sample**
 
-  <img src="https://raw.githubusercontent.com/Alpn4something/OG-Discord/Resources-branch/Showcase-stuff/Screenshots/catpFrappe%20sample.png" width="50%" height="50%" />
+  <img src="https://raw.githubusercontent.com/Alpn4something/OG-Discord/Resources-branch/Showcase-stuff/Screenshots/catpFrappe%20sample.png" width="70%" height="70%" />
 
 </details>
 
@@ -88,11 +88,11 @@ Theme comes in 6 Color schemes:
 
   **friends**
 
-  <img src="https://raw.githubusercontent.com/Alpn4something/OG-Discord/Resources-branch/Showcase-stuff/Screenshots/catp%20Macchiato%20friends.png" width="50%" height="50%" />
+  <img src="https://raw.githubusercontent.com/Alpn4something/OG-Discord/Resources-branch/Showcase-stuff/Screenshots/catp%20Macchiato%20friends.png" width="70%" height="70%" />
 
   **sample**
 
-  <img src="https://raw.githubusercontent.com/Alpn4something/OG-Discord/Resources-branch/Showcase-stuff/Screenshots/catp%20Macchiato%20sample.png" width="50%" height="50%" />
+  <img src="https://raw.githubusercontent.com/Alpn4something/OG-Discord/Resources-branch/Showcase-stuff/Screenshots/catp%20Macchiato%20sample.png" width="70%" height="70%" />
 
 </details>
 
@@ -103,11 +103,11 @@ Theme comes in 6 Color schemes:
 
   **friends**
 
-  <img src="https://raw.githubusercontent.com/Alpn4something/OG-Discord/Resources-branch/Showcase-stuff/Screenshots/catpMoccha%20friends.png" width="50%" height="50%" />
+  <img src="https://raw.githubusercontent.com/Alpn4something/OG-Discord/Resources-branch/Showcase-stuff/Screenshots/catpMoccha%20friends.png" width="70%" height="70%" />
 
   **sample**
 
-  <img src="https://raw.githubusercontent.com/Alpn4something/OG-Discord/Resources-branch/Showcase-stuff/Screenshots/catpMoccha%20sample.png" width="50%" height="50%" />
+  <img src="https://raw.githubusercontent.com/Alpn4something/OG-Discord/Resources-branch/Showcase-stuff/Screenshots/catpMoccha%20sample.png" width="70%" height="70%" />
 
 </details>
 
@@ -118,10 +118,10 @@ Theme comes in 6 Color schemes:
 
   **friends**
 
-  <img src="https://raw.githubusercontent.com/Alpn4something/OG-Discord/Resources-branch/Showcase-stuff/Screenshots/gruvbox%20friends.png" width="50%" height="50%" />
+  <img src="https://raw.githubusercontent.com/Alpn4something/OG-Discord/Resources-branch/Showcase-stuff/Screenshots/gruvbox%20friends.png" width="70%" height="70%" />
 
   **sample**
 
-  <img src="https://raw.githubusercontent.com/Alpn4something/OG-Discord/Resources-branch/Showcase-stuff/Screenshots/gruvbox%20sample.png" width="50%" height="50%" />
+  <img src="https://raw.githubusercontent.com/Alpn4something/OG-Discord/Resources-branch/Showcase-stuff/Screenshots/gruvbox%20sample.png" width="70%" height="70%" />
 
 </details>
