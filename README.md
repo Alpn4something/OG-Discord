@@ -33,7 +33,80 @@ It's quite hard to pin down what exactly did i change (everything? 600 lines in 
 
 </details>
 
-# Things left to do:
--Add more themes
+## Color schemes for OG-Discord (WIP)
+Theme comes in 6 Color schemes:
 
--Do a proper comparison to VGUICORD
+### Steam2004 (default)
+
+**friends**
+
+![friends](https://github.com/Alpn4something/OG-Discord/raw/Resources-branch/Showcase-stuff/Screenshots/steam2004%20friends.png)
+
+**sample**
+
+![sample](https://github.com/Alpn4something/OG-Discord/raw/Resources-branch/Showcase-stuff/Screenshots/steam2004%20sample.png)
+
+<details>
+  <summary><h3>Steam2004 ALT</h3></summary>
+
+  **friends**
+
+  <img src="https://github.com/Alpn4something/OG-Discord/raw/Resources-branch/Showcase-stuff/Screenshots/steam2004ALT%20friends.png" />
+
+  **sample**
+
+  <img src="https://github.com/Alpn4something/OG-Discord/raw/Resources-branch/Showcase-stuff/Screenshots/steam2004ALT%20sample.png" />
+
+</details>
+
+<details>
+  <summary><h3>Catppuccin Frappe</h3></summary>
+
+  **friends**
+
+  <img src="https://github.com/Alpn4something/OG-Discord/raw/Resources-branch/Showcase-stuff/Screenshots/catpFrappe%20friends.png" />
+
+  **sample**
+
+  <img src="https://github.com/Alpn4something/OG-Discord/raw/Resources-branch/Showcase-stuff/Screenshots/catpFrappe%20sample.png" />
+
+</details>
+
+<details>
+  <summary><h3>Catppuccin Macchiato</h3></summary>
+
+  **friends**
+
+  <img src="https://github.com/Alpn4something/OG-Discord/raw/Resources-branch/Showcase-stuff/Screenshots/catp%20Macchiato%20friends.png" />
+
+  **sample**
+
+  <img src="https://github.com/Alpn4something/OG-Discord/raw/Resources-branch/Showcase-stuff/Screenshots/catp%20Macchiato%20sample.png" />
+
+</details>
+
+<details>
+  <summary><h3>Catppuccin Mocha</h3></summary>
+
+  **friends**
+
+  <img src="https://github.com/Alpn4something/OG-Discord/raw/Resources-branch/Showcase-stuff/Screenshots/catpMoccha%20friends.png" />
+
+  **sample**
+
+  <img src="https://github.com/Alpn4something/OG-Discord/raw/Resources-branch/Showcase-stuff/Screenshots/catpMoccha%20sample.png" />
+
+</details>
+
+<details>
+  <summary><h3>Gruvbox</h3></summary>
+
+  **friends**
+
+  <img src="https://github.com/Alpn4something/OG-Discord/raw/Resources-branch/Showcase-stuff/Screenshots/gruvbox%20friends.png" />
+
+  **sample**
+
+  <img src="https://github.com/Alpn4something/OG-Discord/raw/Resources-branch/Showcase-stuff/Screenshots/gruvbox%20sample.png" />
+
+</details>
