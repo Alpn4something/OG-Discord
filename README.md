@@ -39,77 +39,89 @@ Theme comes in 6 Color schemes:
 <details>
   <summary><h3>Steam2004 (DEFAULT)</h3></summary>
 
-**friends**
+  <img src="https://raw.githubusercontent.com/Alpn4something/OG-Discord/Resources-branch/Source/loading%20COMPILED/Loading%202004.png" />
 
-<img src="https://github.com/Alpn4something/OG-Discord/raw/Resources-branch/Showcase-stuff/Screenshots/steam2004%20friends.png" />
+  **friends**
 
-**sample**
+  <img src="https://raw.githubusercontent.com/Alpn4something/OG-Discord/Resources-branch/Showcase-stuff/Screenshots/steam2004%20friends.png" width="50%" height="50%" />
 
-<img src="https://github.com/Alpn4something/OG-Discord/raw/Resources-branch/Showcase-stuff/Screenshots/steam2004%20sample.png" />
+  **sample**
+
+  <img src="https://raw.githubusercontent.com/Alpn4something/OG-Discord/Resources-branch/Showcase-stuff/Screenshots/steam2004%20sample.png" width="50%" height="50%" />
 
 </details>
 
 <details>
   <summary><h3>Steam2004 ALT</h3></summary>
 
+  <img src="https://raw.githubusercontent.com/Alpn4something/OG-Discord/Resources-branch/Source/loading%20COMPILED/Loading%202004ALT.png" />
+
   **friends**
 
-  <img src="https://github.com/Alpn4something/OG-Discord/raw/Resources-branch/Showcase-stuff/Screenshots/steam2004ALT%20friends.png" />
+  <img src="https://raw.githubusercontent.com/Alpn4something/OG-Discord/Resources-branch/Showcase-stuff/Screenshots/steam2004ALT%20friends.png" width="50%" height="50%" />
 
   **sample**
 
-  <img src="https://github.com/Alpn4something/OG-Discord/raw/Resources-branch/Showcase-stuff/Screenshots/steam2004ALT%20sample.png" />
+  <img src="https://raw.githubusercontent.com/Alpn4something/OG-Discord/Resources-branch/Showcase-stuff/Screenshots/steam2004ALT%20sample.png" width="50%" height="50%" />
 
 </details>
 
 <details>
   <summary><h3>Catppuccin Frappe</h3></summary>
 
+  <img src="https://raw.githubusercontent.com/Alpn4something/OG-Discord/Resources-branch/Source/loading%20COMPILED/Loading%20frappe.png" />
+
   **friends**
 
-  <img src="https://github.com/Alpn4something/OG-Discord/raw/Resources-branch/Showcase-stuff/Screenshots/catpFrappe%20friends.png" />
+  <img src="https://raw.githubusercontent.com/Alpn4something/OG-Discord/Resources-branch/Showcase-stuff/Screenshots/catpFrappe%20friends.png" width="50%" height="50%" />
 
   **sample**
 
-  <img src="https://github.com/Alpn4something/OG-Discord/raw/Resources-branch/Showcase-stuff/Screenshots/catpFrappe%20sample.png" />
+  <img src="https://raw.githubusercontent.com/Alpn4something/OG-Discord/Resources-branch/Showcase-stuff/Screenshots/catpFrappe%20sample.png" width="50%" height="50%" />
 
 </details>
 
 <details>
   <summary><h3>Catppuccin Macchiato</h3></summary>
 
+  <img src="https://raw.githubusercontent.com/Alpn4something/OG-Discord/Resources-branch/Source/loading%20COMPILED/Loading%20macchiato.png" />
+
   **friends**
 
-  <img src="https://github.com/Alpn4something/OG-Discord/raw/Resources-branch/Showcase-stuff/Screenshots/catp%20Macchiato%20friends.png" />
+  <img src="https://raw.githubusercontent.com/Alpn4something/OG-Discord/Resources-branch/Showcase-stuff/Screenshots/catp%20Macchiato%20friends.png" width="50%" height="50%" />
 
   **sample**
 
-  <img src="https://github.com/Alpn4something/OG-Discord/raw/Resources-branch/Showcase-stuff/Screenshots/catp%20Macchiato%20sample.png" />
+  <img src="https://raw.githubusercontent.com/Alpn4something/OG-Discord/Resources-branch/Showcase-stuff/Screenshots/catp%20Macchiato%20sample.png" width="50%" height="50%" />
 
 </details>
 
 <details>
   <summary><h3>Catppuccin Mocha</h3></summary>
 
+  <img src="https://raw.githubusercontent.com/Alpn4something/OG-Discord/Resources-branch/Source/loading%20COMPILED/Loading%20moccha.png" />
+
   **friends**
 
-  <img src="https://github.com/Alpn4something/OG-Discord/raw/Resources-branch/Showcase-stuff/Screenshots/catpMoccha%20friends.png" />
+  <img src="https://raw.githubusercontent.com/Alpn4something/OG-Discord/Resources-branch/Showcase-stuff/Screenshots/catpMoccha%20friends.png" width="50%" height="50%" />
 
   **sample**
 
-  <img src="https://github.com/Alpn4something/OG-Discord/raw/Resources-branch/Showcase-stuff/Screenshots/catpMoccha%20sample.png" />
+  <img src="https://raw.githubusercontent.com/Alpn4something/OG-Discord/Resources-branch/Showcase-stuff/Screenshots/catpMoccha%20sample.png" width="50%" height="50%" />
 
 </details>
 
 <details>
   <summary><h3>Gruvbox</h3></summary>
 
+  <img src="https://raw.githubusercontent.com/Alpn4something/OG-Discord/Resources-branch/Source/loading%20COMPILED/Loading%20Gruvbox.png" />
+
   **friends**
 
-  <img src="https://github.com/Alpn4something/OG-Discord/raw/Resources-branch/Showcase-stuff/Screenshots/gruvbox%20friends.png" />
+  <img src="https://raw.githubusercontent.com/Alpn4something/OG-Discord/Resources-branch/Showcase-stuff/Screenshots/gruvbox%20friends.png" width="50%" height="50%" />
 
   **sample**
 
-  <img src="https://github.com/Alpn4something/OG-Discord/raw/Resources-branch/Showcase-stuff/Screenshots/gruvbox%20sample.png" />
+  <img src="https://raw.githubusercontent.com/Alpn4something/OG-Discord/Resources-branch/Showcase-stuff/Screenshots/gruvbox%20sample.png" width="50%" height="50%" />
 
 </details>
