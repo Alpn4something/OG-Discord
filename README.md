@@ -8,8 +8,10 @@ RESOURCESBRANCHRESOURCESBRANCHRESOURCESBRANCHRESOURCESBRANCHRESOURCESBRANCHRESOU
 OG-Discord is a fork of VGUIcord discord theme by Domitorii. OG-Discord development started as a project to restore Discord 1.6 former glory by adding new classes to its code, but grown into something bigger. As of now, its a 2k+ lines of code fork with a lot of additions and discord debloating features inside. Only downside being that all of these features cant be turned off.
 Theme is made not only for personal use, so i'll be maintaining it a fine amount of time. Report glitches :)
 
+# What is OG-Discord
+It's quite hard to pin down what exactly did i change (everything? 600 lines in D. 1.6 VS OG-D's 2300+ lines), so here's a comparison between Discord 1.6 (old codebase), VGUIcord (new codebase) and OG-Discord (this fork).
 <details>
-  <summary><h3>Theme Comparison</h3></summary>
+  <summary><h3>Discord 1.6 VS OG-Discord VS VGUIcord</h3></summary>
 
   ### Theme Sample
   <img src="https://github.com/Alpn4something/OG-Discord/raw/Resources-branch/Showcase-stuff/COMPILED/comparison%20-%20sample.png" />
