@@ -444,6 +444,9 @@ code, /* code */
 .container_d8f25b, /* roles default perms */
 .container_d8f25b .icon_d8f25b, /* roles default perms icon */
 .content__7e354.opened__7e354, /* server invite "server nickname" box */
+.giftingButton_ca8727, /* game name when doing a screen demo */
+.selectFieldContent__0edde,
+.chevronButton__0edde, /* input profile/custom/krisp */
 
 body {
     transition: none !important;
@@ -724,7 +727,7 @@ body {
     display: block;
     position: absolute;
     left: 9px;
-    width: 10px;  /* размер квадрата */
+    width: 10px;
     height: 10px;
     background-color: var(--online-2); 
     border: 1px solid;
@@ -736,7 +739,7 @@ body {
     display: block;
     position: absolute;
     left: 5px;
-    width: 10px;  /* размер квадрата */
+    width: 10px;
     height: 10px;
     background-color: var(--offline-2); 
     border: 1px solid;
@@ -764,6 +767,7 @@ body {
 [class*="voiceSectionGuildImage__"] {
     -webkit-mask: none !important;
 }
+.wrapper__44b0c.viewer_d6b206,
 [class*="partyMember_"] {
     -webkit-mask: none !important;
     margin-left: 5px !important;
@@ -1168,6 +1172,7 @@ margin: -10px !important;
 .soundEdit__93d4a, /* soundboard edit buttons */
 .pill__33d66.pill_f7c056, /* server placeholder rules */
 .container_fb1896, /* Add a rule button */
+.giftingButton_ca8727,
 .inviteEmbed_ae2544, /* not a button, but a server invite box that needs a recoloring */ 
 .wrapper_f7ecac /* message content preview - buttons to edit */ {
     background-color: var(--alpn4-custom-bg-brighter) !important;
@@ -1867,8 +1872,6 @@ foreignObject[mask*="status-online"] .status_a423bd {
 /* /=====|MISC FIXES|=====\ */
     /* <code> fix */
 
-
-
 code {
     display: block !important;
     padding: 5px !important;
@@ -1990,7 +1993,8 @@ code {
     color: var(--custom-secondary-text-brighter) !important;
 }
 
-     /* make use of new black text color - on new messages bar */
+     /* make use of new black text color - on new messages bar + join voice button text fix */
+.button_a22cb0.overlay-primary_a22cb0 .buttonChildren_a22cb0,
 .newMessagesBar__0f481 .span__0f481,
 .newMessagesBar__0f481 .markAsReadText__0f481,
 .newMessagesBar__0f481 .barButtonIcon__0f481 {
@@ -1998,6 +2002,7 @@ code {
 }
 
      /* make nickname use --custom-text instead of secondary */
+.button_a22cb0.overlay-primary_a22cb0 .buttonChildren_a22cb0,
 .displayNameRow__26b1f .clickable__26b1f .displayName__26b1f.noStyles__26b1f {
     -webkit-text-fill-color: var(--custom-text) !important; 
 }
@@ -2124,7 +2129,7 @@ z-index: 2;
     display: block;
     position: absolute;
     top: 1px;
-    left: 130px;
+    left: 131px;
     width: 564px;
     height: 36px;
     background-color: var(--custom-secondary-bg) !important;
@@ -2189,10 +2194,10 @@ z-index: 2;
     background: var(--custom-secondary-accent) !important;
 }
      /* misc. button fixes */
-.buttonChildrenWrapper_a22cb0:not(.searchBar_e6b769 .buttonChildrenWrapper_a22cb0):not(.container_abd9a8 .buttonChildrenWrapper_a22cb0):not(.outer_c0bea0 .buttonChildrenWrapper_a22cb0):not(.welcomeCTA_f5d1e2 .buttonChildrenWrapper_a22cb0):not(.topBar__6088c .buttonChildrenWrapper_a22cb0):not(.refreshVoiceChannelsButton__29444 .buttonChildrenWrapper_a22cb0):not(.animatedDiv_b97385 .buttonChildrenWrapper_a22cb0):not(.headerTitle__06f80 .buttonChildrenWrapper_a22cb0):not(.box__376cb .buttonChildrenWrapper_a22cb0):not(.roleRow__5f97b .buttonChildrenWrapper_a22cb0):not(.overlayBottom__2f4f7 .buttonChildrenWrapper_a22cb0) { /* (code sample - "go to server" buttons) */
+.buttonChildrenWrapper_a22cb0:not(.searchBar_e6b769 .buttonChildrenWrapper_a22cb0):not(.container_abd9a8 .buttonChildrenWrapper_a22cb0):not(.outer_c0bea0 .buttonChildrenWrapper_a22cb0):not(.welcomeCTA_f5d1e2 .buttonChildrenWrapper_a22cb0):not(.topBar__6088c .buttonChildrenWrapper_a22cb0):not(.refreshVoiceChannelsButton__29444 .buttonChildrenWrapper_a22cb0):not(.animatedDiv_b97385 .buttonChildrenWrapper_a22cb0):not(.headerTitle__06f80 .buttonChildrenWrapper_a22cb0):not(.box__376cb .buttonChildrenWrapper_a22cb0):not(.roleRow__5f97b .buttonChildrenWrapper_a22cb0):not(.overlayBottom__2f4f7 .buttonChildrenWrapper_a22cb0):not([class*="cta__"] .buttonChildrenWrapper_a22cb0) { /* (code sample - "go to server" buttons) */
 	background: var(--custom-secondary-accent)
 }
-.buttonChildrenWrapper_a22cb0:hover:not(.searchBar_e6b769 .buttonChildrenWrapper_a22cb0):not(.container_abd9a8 .buttonChildrenWrapper_a22cb0):not(.outer_c0bea0 .buttonChildrenWrapper_a22cb0):not(.welcomeCTA_f5d1e2 .buttonChildrenWrapper_a22cb0):not(.topBar__6088c .buttonChildrenWrapper_a22cb0):not(.refreshVoiceChannelsButton__29444 .buttonChildrenWrapper_a22cb0):not(.animatedDiv_b97385 .buttonChildrenWrapper_a22cb0):not(.headerTitle__06f80 .buttonChildrenWrapper_a22cb0):not(.box__376cb .buttonChildrenWrapper_a22cb0):not(.roleRow__5f97b .buttonChildrenWrapper_a22cb0):not(.overlayBottom__2f4f7 .buttonChildrenWrapper_a22cb0) {
+.buttonChildrenWrapper_a22cb0:hover:not(.searchBar_e6b769 .buttonChildrenWrapper_a22cb0):not(.container_abd9a8 .buttonChildrenWrapper_a22cb0):not(.outer_c0bea0 .buttonChildrenWrapper_a22cb0):not(.welcomeCTA_f5d1e2 .buttonChildrenWrapper_a22cb0):not(.topBar__6088c .buttonChildrenWrapper_a22cb0):not(.refreshVoiceChannelsButton__29444 .buttonChildrenWrapper_a22cb0):not(.animatedDiv_b97385 .buttonChildrenWrapper_a22cb0):not(.headerTitle__06f80 .buttonChildrenWrapper_a22cb0):not(.box__376cb .buttonChildrenWrapper_a22cb0):not(.roleRow__5f97b .buttonChildrenWrapper_a22cb0):not(.overlayBottom__2f4f7 .buttonChildrenWrapper_a22cb0):not([class*="cta__"] .buttonChildrenWrapper_a22cb0) {
 	background: var(--custom-secondary-accent-brighter) !important;
 }
 
@@ -2233,29 +2238,31 @@ z-index: 2;
 /* /=====|Loading screen reskin - rewritten system24 code|=====\ */
 
    /* get rid of "did you know" and discord logo spinner */
-:where(.content_a2f514) .text_a2f514,
 :where(.content_a2f514) .spinner_a2f514 {
         display: none !important;
 }
-
-
-  /* dark background */
-.content_a2f514::before {
-  content: '';
-  display: block;
-  background: color-mix(black 50%, var(--custom-bg) 50%);
-  height: 9999px;
-  width: 9999px;
-  z-index: 1;
-}
-  /* doing ::after with my loading */
-.problems_a2f514 {
-    position: fixed !important;
+:where(.content_a2f514) .text_a2f514 .tipTitle_a2f514,
+:where(.content_a2f514) .text_a2f514 .tip_a2f514 {
+    visibility: hidden !important;
 }
 
-.problems_a2f514::after {
+:where(.content_a2f514) .text_a2f514 .tipTitle_a2f514::after {
     content: var(--custom-loading1);
-    display: inline;
+    display: block;
+    margin-left: -40px;
+    visibility: initial;
+}
+:where(.content_a2f514) .text_a2f514 .tip_a2f514 {
+    position: relative !important;
+}
+:where(.content_a2f514) .text_a2f514 .tip_a2f514::after {
+    content: '';
+    display: block;
     position: absolute;
-    top: -600px
+    top: -2000px;
+    left: -2000px;
+    width: 9999px;
+    height: 9999px;
+    background: color-mix(black 50%, var(--custom-bg) 50%);
+    visibility: initial;
 }
