@@ -2211,7 +2211,7 @@ z-index: 2;
     .modalHeaderButtons_b92f52 .buttonChildrenWrapper_a22cb0,
     .accountCard__920b8 .buttonChildrenWrapper_a22cb0) 
 {
-    background: var(--custom-secondary-accent-brighter) !important;
+    background: var(--custom-secondary-accent) !important;
 }
 
 .buttonChildrenWrapper_a22cb0:hover:not(
