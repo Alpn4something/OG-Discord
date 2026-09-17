@@ -9,7 +9,7 @@ OG-Discord is a fork of VGUIcord discord theme by Domitorii. OG-Discord developm
 Theme is made not only for personal use, so i'll be maintaining it a fine amount of time. Report glitches :)
 
 # So... What changed?
-It's quite hard to pin down what exactly did i change (everything? 600 lines in D. 1.6 VS OG-D's 2300+ lines), so here's a comparison between Discord 1.6 (old codebase), VGUIcord (new codebase) and OG-Discord (this fork).
+It's quite hard to pin down what exactly did i change (everything? 600 lines in D. 1.6 VS OG-D's 2300+ lines), so here's a comparison between Discord 1.6 (old codebase), OG-Discord (this fork) and VGUIcord (new codebase).
 <details>
   <summary><h3>Discord 1.6 VS OG-Discord VS VGUIcord</h3></summary>
 
