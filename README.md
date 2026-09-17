@@ -40,11 +40,11 @@ Theme comes in 6 Color schemes:
 
 **friends**
 
-![friends](https://github.com/Alpn4something/OG-Discord/raw/Resources-branch/Showcase-stuff/Screenshots/steam2004%20friends.png)
+<img src="https://github.com/Alpn4something/OG-Discord/raw/Resources-branch/Showcase-stuff/Screenshots/steam2004%20friends.png" />
 
 **sample**
 
-![sample](https://github.com/Alpn4something/OG-Discord/raw/Resources-branch/Showcase-stuff/Screenshots/steam2004%20sample.png)
+<img src="https://github.com/Alpn4something/OG-Discord/raw/Resources-branch/Showcase-stuff/Screenshots/steam2004%20sample.png" />
 
 <details>
   <summary><h3>Steam2004 ALT</h3></summary>
