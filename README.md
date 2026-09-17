@@ -37,7 +37,7 @@ It's quite hard to pin down what exactly did i change (everything? 600 lines in 
 Theme comes in 6 Color schemes:
 
 <details>
-  <summary><h3>Steam2004 ALT</h3></summary>
+  <summary><h3>Steam2004 (DEFAULT)</h3></summary>
 
 **friends**
 
