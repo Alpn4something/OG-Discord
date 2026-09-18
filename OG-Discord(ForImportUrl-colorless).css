@@ -447,6 +447,7 @@ code, /* code */
 .giftingButton_ca8727, /* game name when doing a screen demo */
 .selectFieldContent__0edde,
 .chevronButton__0edde, /* input profile/custom/krisp */
+.viewFullBio_f5f93a .textButton__7a01b, /* speaks for itself */
 
 body {
     transition: none !important;
@@ -1883,6 +1884,9 @@ code {
 .repliedTextPreview_c19a55 code {
     padding: 2px !important;
 }
+.body_b32ca4 code {
+    display: inline table !important;
+}
 
     /* streams/other stuff stupid "second chin" of card container removed  */
 .inner_c0bea0 .overlay_c0bea0.backgroundCard__9d597 {
@@ -2209,6 +2213,7 @@ z-index: 2;
     [class*="cta__"] .buttonChildrenWrapper_a22cb0,
     .headerTrailing__8a031 .buttonChildrenWrapper_a22cb0,
     .modalHeaderButtons_b92f52 .buttonChildrenWrapper_a22cb0,
+    .footer__4d95d .buttonChildrenWrapper_a22cb0,
     .accountCard__920b8 .buttonChildrenWrapper_a22cb0) 
 {
     background: var(--custom-secondary-accent) !important;
@@ -2229,7 +2234,8 @@ z-index: 2;
     [class*="cta__"] .buttonChildrenWrapper_a22cb0,
     .headerTrailing__8a031 .buttonChildrenWrapper_a22cb0,
     .modalHeaderButtons_b92f52 .buttonChildrenWrapper_a22cb0,
-    .accountCard__920b8 .buttonChildrenWrapper_a22cb0)
+    .footer__4d95d .buttonChildrenWrapper_a22cb0,
+    .accountCard__920b8 .buttonChildrenWrapper_a22cb0) 
 {
     background: var(--custom-secondary-accent-brighter) !important;
 }
