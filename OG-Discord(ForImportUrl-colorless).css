@@ -1390,7 +1390,7 @@ foreignObject[mask*="status-online"] .status_a423bd {
     --custom-profile-frame-overflow-horizontal: unset !important;
 }
 
-* {
+*:not([class*="messageContent"] *) {
      font-family: var(--font-primary) !important;
      font-variant: normal !important;
      font-style: normal !important;
