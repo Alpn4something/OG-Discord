@@ -3,11 +3,11 @@
 </div>
 
 # What is OG-Discord
-OG-Discord is a fork of VGUIcord discord theme by Domitorii. OG-Discord development started as a project to restore Discord 1.6 former glory by adding new classes to its code, but grown into something bigger. As of now, its a 2k+ lines of code fork with a lot of additions and discord debloating features inside. Only downside being that all of these features cant be turned off.
-Theme is made not only for personal use, so i'll be maintaining it a fine amount of time. Report glitches :)
+OG-Discord is a fork of VGUIcord discord theme by Domitorii. OG-Discord development started as a project to restore Discord 1.6 former glory by adding new classes to its code, but grown into something bigger. As of now, it's a 2k+ lines of code fork with a lot of additions and discord debloating features inside. Only downside being that all of these features cant be turned off.
+Theme is made not only for personal use, so I'll be maintaining it a fine amount of time. Report glitches :)
 
 # So... What changed?
-It's quite hard to pin down what exactly did i change (everything? 600 lines in D. 1.6 VS OG-D's 2300+ lines), so here's a comparison between Discord 1.6 (old codebase), OG-Discord (this fork) and VGUIcord (new codebase).
+It's quite hard to pin down what exactly did I change (everything? 600 lines in D. 1.6 VS OG-D's 2300+ lines), so here's a comparison between Discord 1.6 (old codebase), OG-Discord (this fork) and VGUIcord (new codebase).
 <details>
   <summary><h3>Discord 1.6 VS OG-Discord VS VGUIcord</h3></summary>
 
@@ -126,7 +126,8 @@ Theme comes in 6 Color schemes:
 
 
 ### How do i install this?
-Use any client modification that supports .css themes (Vencord, as an example) and copy preferred color scheme file into themes folder. Can't be any simple. If you can't to this, what can you do?.
+Use any client modification that supports .css themes (Vencord, as an example) and copy preferred color scheme file into themes folder. It's simple as that! 
+<sub>(If you can't do this, what can you do?)</sub>
 
 Alternatively, you can copy text from settings file and merge it with [OG-Discord(ForImportUrl-colorless).css](https://github.com/Alpn4something/OG-Discord/blob/Resources-branch/OG-Discord(ForImportUrl-colorless).css), removing import url in process, making theme less dependent on Github servers (excluding aPNGs and SVG that theme uses).
 
