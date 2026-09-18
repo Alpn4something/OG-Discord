@@ -1874,7 +1874,7 @@ foreignObject[mask*="status-online"] .status_a423bd {
     /* <code> fix */
 
 code {
-    display: block !important;
+    display: inline table !important;
     padding: 5px !important;
     margin: 0 !important;
 }
