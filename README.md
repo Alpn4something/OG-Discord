@@ -125,3 +125,11 @@ Theme comes in 6 Color schemes:
   <img src="https://raw.githubusercontent.com/Alpn4something/OG-Discord/Resources-branch/Showcase-stuff/Screenshots/gruvbox%20sample.png" width="70%" height="70%" />
 
 </details>
+
+
+### THIS WOULDN'T BE POSSIBLE WITHOUT:
+--[Refac0r](https://github.com/refact0r). A person who made [system24](https://github.com/refact0r/system24). I used his work as a reference and basically started learning .css from making a cut-down version of it.
+
+--[abbie](https://github.com/abbie). Props to this person for showing me there is a way to debloat a discord client via [discord-css](https://github.com/abbie/discord-css)
+
+--[domi](https://github.com/dom1torii) (well, obviously, for making [Discord](https://github.com/dom1torii/VGUICord/tree/discord16) 1.6 which i forked the hell out of)
