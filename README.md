@@ -145,4 +145,4 @@ Alternatively, you can copy text from settings file and merge it with [OG-Discor
 
 
 
-—Casseteheimer. Gave me some tips on how to start. Sometimes i kept moving on with this fork just to show him some progress through steam chat. Same goes for all of my friends:)))
+—A very very anonymous person in my steam friends (if you're reading this, then you either know who he is, or have completely no idea). Gave me some tips on how to start. Sometimes i kept moving on with this fork just to show him some progress through steam chat. Same goes for all of my friends:)))
