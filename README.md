@@ -127,9 +127,17 @@ Theme comes in 6 Color schemes:
 </details>
 
 
+### How do i install this?
+Use any client modification that supports .css themes (Vencord, as an example) and copy preferred color scheme file into themes folder. Can't be any simple. If you can't to this, what can you do?.
+
+Alternatively, you can copy text from settings file and merge it with [OG-Discord(ForImportUrl-colorless).css](https://github.com/Alpn4something/OG-Discord/blob/Resources-branch/OG-Discord(ForImportUrl-colorless).css), removing import url in process, making theme less dependent on Github servers (excluding aPNGs and SVG that theme uses).
+
+
 ### THIS WOULDN'T BE POSSIBLE WITHOUT:
---[Refac0r](https://github.com/refact0r). A person who made [system24](https://github.com/refact0r/system24). I used his work as a reference and basically started learning .css from making a cut-down version of it.
+—[Refac0r](https://github.com/refact0r). A person who made [system24](https://github.com/refact0r/system24). I used his work as a reference and basically started learning .css from making a cut-down version of it.
 
---[abbie](https://github.com/abbie). Props to this person for showing me there is a way to debloat a discord client via [discord-css](https://github.com/abbie/discord-css)
+—[abbie](https://github.com/abbie). Props to this person for showing me there is a way to debloat a discord client via [discord-css](https://github.com/abbie/discord-css).
 
---[domi](https://github.com/dom1torii) (well, obviously, for making [Discord](https://github.com/dom1torii/VGUICord/tree/discord16) 1.6 which i forked the hell out of)
+—[domi](https://github.com/dom1torii). (well, obviously, for making [Discord 1.6](https://github.com/dom1torii/VGUICord/tree/discord16) which i forked the hell out of)
+
+—[Ungstein](https://github.com/ungstein) and his [OG-Steam](https://github.com/ungstein/OG-Steam) theme for VGUI Steam (pre 2023 UI update). If this wouldn't exist, I'd never get into old steam aesthetics in general. R.I.P OG-Steam, you were the best Steam theme i used :(
