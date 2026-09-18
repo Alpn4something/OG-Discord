@@ -1,0 +1,90 @@
+/**
+ * @name OG-Discord(Steam2004Colors)
+ * @author Alpn4, (and also dom1torii by making stuff i forked, thanks:3).
+ * @description COLORS DESC - Colors of original VGIUcord expanded
+ * @website https://github.com/Alpn4something/OG-Discord
+ * @version 1.0
+*/
+
+@import url("https://raw.githubusercontent.com/Alpn4something/OG-Discord/refs/heads/Resources-branch/OG-Discord(ForImportUrl-colorless).css");
+
+/* --- Font Settings --- */
+* {
+    --font: "arial"; /* Change to "" for default font */
+}
+
+
+/* Colors */
+:root {
+    --custom-bg: #4a5942;
+    --custom-secondary-bg: #3e4637;
+    --custom-secondary-bg-brighter: #4b5543; /* used for some buttons and other things. E.G - "Friends" button on top of the chat list */
+    --alpn4-custom-bg-brighter: #53604d; /* Janky way to match some bugged button colors. Usage example - every single user banner */
+    --alpn4-custom-bg-brighter2: #4f5f46; /* Like custom bg but brighter */
+    --alpn4-custom-bg-black: #4f5b4a; /* Like my 1st color but less bright */
+
+    --custom-accent: #c4b550;
+    --custom-secondary-accent: #958831;
+    --custom-secondary-accent-brighter: #b49d1e; /* brighter secondary */
+    --custom-accent-colormix: #5a5c31; /* custom accent + transparent colormix workarround */
+    --custom-accent-compactchat: #78801a;
+
+    --dark-border: #292c21;
+    --light-border: #8c9284;
+
+    --dark-border-reaction: #35320f;
+    --light-border-reaction: #948d31;
+
+    --dark-border-separator: var(--dark-border); /* in case you'd like to get rid of separator shadows for your own theme */
+    --light-border-separator: var(--light-border);
+
+    --custom-text: #ffffff;
+    --custom-secondary-text: #dddddd;
+
+    --custom-somebuttons: #cdcdcd;
+
+    /* ↓Even more color customization because why not. Use if needed :) */
+
+    --microphone-test-gradient: linear-gradient(to right, var(--custom-secondary-accent) 0%, var(--custom-secondary-accent-brighter) 30%, var(--custom-accent) 55%, red 100%);
+
+    --custom-bg-caret: color-mix(var(--custom-bg) 100%, white 3%); /* color for popovers when hovering on a server icon, buttons on top of the chat like pinned msgs... You get it */
+ 
+    --custom-text-newmessagesbar: #ffffff; /* can be darkened if custom-accent is too bright */
+
+    --custom-secondary-text-brighter: #dddddd; /* used for settings. Just in case the secondary text color is a little too dark */
+
+    --custom-userarea-buttons-color: #c4b550; /* color for muted mic and headphones icons */
+
+    --custom-reactions-dropshadow: #958831; /* Change to "transparent" to hide this... Ooor just delete the drop-shadow code */
+
+    --custom-notifications: #171717; /* Not only notifs but any main red stuff, really. E.G - screen sharing */
+
+    --custom-boostgoal: var(--custom-secondary-accent); /* uses secondary accent by default. Change if you feel like. */
+
+    /* ↓Status colors - used for unrounding.css */
+
+    --online-2: #54a5c4;
+    --dnd-2: #d83a41;
+    --idle-2: #ca9654;
+    --offline-2: #82838b;
+    --streaming-2: #9147ff;
+
+}
+
+/* Colors2 - custom blurple hsl prep */
+/* IF MODDING MY STUFF - READ PLS! Context time - Discord's blurple sometimes uses hsl */
+/* What this means to you, is that these parameters will affect some blurple. Obviously use hsl */
+
+* {
+    --blurpleHSL-hue: 52.2; /* Hue (obviously) */
+    --blurpleHSL-sat: 67.1%; /* Saturation (in %) */
+    --blurpleHSL-lig: 28.8%; /* Light (in %) */
+}
+
+/* Logo setup */
+* {
+    --custom-logo: url(https://raw.githubusercontent.com/Alpn4something/OG-Discord/fbc2e8dc450d1821aa683773e84f60fdc8d5f4cb/Source/steam-logo.svg) !important; /* same as discord 1.6, but just in case the link changes, i decided to port it to my own repo */
+    --custom-logo-text: url(https://raw.githubusercontent.com/Alpn4something/OG-Discord/refs/heads/Resources-branch/Source/steam-logo-OGDtext.png) !important; /* custom OGD logo */
+    --custom-loading1: url(https://raw.githubusercontent.com/Alpn4something/OG-Discord/refs/heads/Resources-branch/Source/loading%20COMPILED/Loading%202004.png) !important;  
+}
+/*SETTINGS - END*/

@@ -1,0 +1,88 @@
+/**
+ * @name OG-Discord(CatppuccinFrappe)
+ * @author Alpn4, (and also dom1torii by making stuff i forked, thanks:3).
+ * @description COLORS DESC - Light blue colors
+ * @website https://github.com/Alpn4something/OG-Discord
+ * @version 1.0
+*/
+
+@import url("https://raw.githubusercontent.com/Alpn4something/OG-Discord/refs/heads/Resources-branch/OG-Discord(ForImportUrl-colorless).css");
+
+/* --- Settings --- */
+* {
+    --font: "arial"; /* Change to "" for default font */
+}
+
+/* Colors */
+* {
+    --custom-bg: #303446;
+    --custom-secondary-bg: #292c3c;
+    --custom-secondary-bg-brighter: #303344; /* used for some buttons and other things. E.G - "Friends" button on top of the chat list */
+    --alpn4-custom-bg-brighter: #3c4050; /* Janky way to match some bugged button colors. Usage example - every single user banner */
+    --alpn4-custom-bg-brighter2: #4f5365; /* Like custom bg but brighter */
+    --alpn4-custom-bg-black: #323645; /* Like my 1st color but less bright */
+
+    --custom-accent: #babbf1;
+    --custom-secondary-accent: #8caaee;
+    --custom-secondary-accent-brighter: #9dbaff; /* brighter secondary */
+    --custom-accent-colormix: #4c597a; /* custom accent + transparent colormix workarround */
+    --custom-accent-compactchat: color-mix(var(--custom-secondary-accent) 100%, transparent 95%);
+
+    --dark-border: #232634;
+    --light-border: #838ba7;
+
+    --dark-border-reaction: color-mix(var(--custom-secondary-accent) 10%, var(--dark-border) 100%);
+    --light-border-reaction: color-mix(var(--custom-secondary-accent) 100%, var(--light-border) 40%);
+
+    --dark-border-separator: var(--dark-border); /* in case you'd like to get rid of separator shadows for your own theme */
+    --light-border-separator: var(--light-border);
+
+    --custom-text: #c6d0f5;
+    --custom-secondary-text: #a2aac9;
+
+    --custom-somebuttons: #cdcdcd;
+
+    /* ↓Even more color customization because why not. Use if needed :) */
+
+    --microphone-test-gradient: linear-gradient(to right, var(--custom-secondary-accent) 0%, var(--custom-secondary-accent-brighter) 30%, var(--custom-accent) 55%, red 100%);
+
+    --custom-bg-caret: color-mix(var(--custom-bg) 100%, white 3%); /* color for popovers when hovering on a server icon, buttons on top of the chat like pinned msgs... You get it */
+
+    --custom-text-newmessagesbar: #1d2021; /* can be darkened if custom-accent is too bright */
+
+    --custom-secondary-text-brighter: #afb7d7; /* used for settings. Just in case the secondary text color is a little too dark */
+
+    --custom-userarea-buttons-color: #babbf1;
+
+    --custom-reactions-dropshadow: #4c597a; /* Change to "transparent" to hide this... Ooor just delete the drop-shadow code */
+
+    --custom-notifications: #101624; /* Not only notifs but any main red stuff, really. E.G - screen sharing */
+
+    --custom-boostgoal:  color-mix(var(--custom-secondary-accent) 100%, transparent 50%); /* uses secondary accent by default. Change if you feel like. */
+
+    /* ↓Status colors - used for unrounding.css */
+
+    --online-2: #54a5c4;
+    --dnd-2: #d83a41;
+    --idle-2: #ca9654;
+    --offline-2: #82838b;
+    --streaming-2: #9147ff;
+
+}
+
+/* Colors2 - custom blurple hsl prep */
+/* IF MODDING MY STUFF - READ PLS! Context time - Discord's blurple sometimes uses hsl */
+/* What this means to you, is that these parameters will affect some blurple. Obviously use hsl */
+
+* {
+    --blurpleHSL-hue: 216.8; /* Hue (obviously) */
+    --blurpleHSL-sat: 48.3%; /* Saturation (in %) */
+    --blurpleHSL-lig: 68.4%; /* Light (in %) */
+}
+/* Logo setup */
+* {
+    --custom-logo: url(https://raw.githubusercontent.com/Alpn4something/OG-Discord/fbc2e8dc450d1821aa683773e84f60fdc8d5f4cb/Source/steam-logo.svg) !important; /* same as discord 1.6, but just in case the link changes, i decided to port it to my own repo */
+    --custom-logo-text: url(https://raw.githubusercontent.com/Alpn4something/OG-Discord/refs/heads/Resources-branch/Source/steam-logo-OGDtext.png) !important; /* custom OGD logo */
+    --custom-loading1: url(https://raw.githubusercontent.com/Alpn4something/OG-Discord/refs/heads/Resources-branch/Source/loading%20COMPILED/Loading%20frappe.png) !important;    
+}
+/*SETTINGS - END*/
