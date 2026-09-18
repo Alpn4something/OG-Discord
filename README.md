@@ -3,7 +3,7 @@
 </div>
 
 # What is OG-Discord
-OG-Discord is a fork of VGUIcord discord theme by Domitorii. OG-Discord development started as a project to restore Discord 1.6 former glory by adding new classes to its code, but grown into something bigger. As of now, it's a 2k+ lines of code fork with a lot of additions and discord debloating features inside. Only downside being that all of these features cant be turned off.
+OG-Discord is a fork of [VGUIcord](https://github.com/dom1torii/VGUICord) discord theme by Domitorii. OG-Discord development started as a project to restore Discord 1.6 former glory by adding new classes to its code, but grown into something bigger. As of now, it's a 2k+ lines of code fork with a lot of additions and discord debloating features inside. Only downside being that all of these features cant be turned off.
 Theme is made not only for personal use, so I'll be maintaining it a fine amount of time. Report glitches :)
 
 # So... What changed?
@@ -137,6 +137,12 @@ Alternatively, you can copy text from settings file and merge it with [OG-Discor
 
 —[abbie](https://github.com/abbie). Props to this person for showing me there is a way to debloat a discord client via [discord-css](https://github.com/abbie/discord-css).
 
+—[Blade0](https://blade0.net) for making hypercompact channel list (On vencord server - css snippets text chat). I didn't really asked for a permission... But that what open source is for... Right? :trollface:
+
 —[domi](https://github.com/dom1torii). (well, obviously, for making [Discord 1.6](https://github.com/dom1torii/VGUICord/tree/discord16) which i forked the hell out of)
 
 —[Ungstein](https://github.com/ungstein) and his [OG-Steam](https://github.com/ungstein/OG-Steam) theme for VGUI Steam (pre 2023 UI update). If this wouldn't exist, I'd never get into old steam aesthetics in general. R.I.P OG-Steam, you were the best Steam theme i used :(
+
+
+
+—Casseteheimer. Gave me some tips on how to start. Sometimes i kept moving on with this fork just to show him some progress through steam chat. Same goes for all of my friends:)))
