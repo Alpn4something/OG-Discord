@@ -448,6 +448,8 @@ code, /* code */
 .selectFieldContent__0edde,
 .chevronButton__0edde, /* input profile/custom/krisp */
 .viewFullBio_f5f93a .textButton__7a01b, /* speaks for itself */
+.message__80bf8, /* message in results when searching */
+.searchResultsWrap_a98f3b, /* search results */
 
 body {
     transition: none !important;
@@ -1397,6 +1399,7 @@ foreignObject[mask*="status-online"] .status_a423bd {
      text-shadow: none !important;
      font-weight: normal !important;
      -webkit-text-stroke: 0 !important;
+     font-synthesis-weight: none;
 }
 
 [class*="displayNameRow_"] [class*="container_"],
@@ -1657,6 +1660,11 @@ foreignObject[mask*="status-online"] .status_a423bd {
   border-top: 1px solid var(--dark-border-separator) !important;
   border-bottom: 1px solid var(--light-border-separator) !important;
 }
+     /* guild separator spacing fix */
+.guildSeparator__252b6 {
+  margin-bottom: 2px !important;
+  margin-top: -4px !important;
+}
     
      /* make separators less eye-bleeding */
 .divider__92059, /* connected apps - privacy policy separator */
@@ -1855,6 +1863,7 @@ foreignObject[mask*="status-online"] .status_a423bd {
 }
 
 /* edit profile double banner border fix */
+.searchResultsWrap_a98f3b, /* not really related. search results */
 [class*="settingsPage"] .banner_f7e69e {
     border-bottom: none !important;
 }
@@ -1866,8 +1875,8 @@ foreignObject[mask*="status-online"] .status_a423bd {
 /* /=====|MISC FIXES|=====\ */
     /* <code> fix */
 
-code {
-    display: inline table !important;
+code:not([class="scrollbarGhostHairline_da3286 scrollbar_da3286 hljs css"]):not(.codeView__4d95d) {
+    display: inline-block !important;
     padding: 5px !important;
     margin: 0 !important;
 }
@@ -1877,9 +1886,7 @@ code {
 .repliedTextPreview_c19a55 code {
     padding: 2px !important;
 }
-.body_b32ca4 code {
-    display: inline table !important;
-}
+
 
     /* streams/other stuff stupid "second chin" of card container removed  */
 .inner_c0bea0 .overlay_c0bea0.backgroundCard__9d597 {
@@ -1959,6 +1966,7 @@ code {
 .tierBody_a36dee {
     background: var(--alpn4-custom-bg-brighter) !important;
 }
+.searchHeader_ae7890, /* not related to the fix theme, this is search results header */
 .tierHeaderContent_a36dee {
     border-bottom: 1px solid var(--dark-border) !important;
 }
@@ -2260,6 +2268,8 @@ z-index: 2;
     --icon-voice-muted: var(--custom-userarea-buttons-color) !important; /* Speaks for itself. E.G - muted mic icon */
 
     --red-new-46: var(--custom-notifications) !important; /* Notifications. E.G - a red counter of messages that a friend sent you */
+    --red-new-50: var(--custom-notifications) !important; /* new notifs color - fix. No idea why these schizos changed it */
+
     --red-new-28: var(--custom-accent) !important; /* red icons */
 
     --green-new-40: var(--online-2) !important;
