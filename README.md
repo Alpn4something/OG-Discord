@@ -132,7 +132,7 @@ Use any client modification that supports .css themes (Vencord, as an example) a
 Alternatively, you can copy text from settings file and merge it with [OG-Discord(ForImportUrl-colorless).css](https://github.com/Alpn4something/OG-Discord/blob/Resources-branch/OG-Discord(ForImportUrl-colorless).css), removing import url in process, making theme less dependent on Github servers (excluding aPNGs and SVG that theme uses).
 
 
-### THIS WOULDN'T BE POSSIBLE WITHOUT:
+# THIS WOULDN'T BE POSSIBLE WITHOUT:
 —[Refac0r](https://github.com/refact0r). A person who made [system24](https://github.com/refact0r/system24). I used his work as a reference and basically started learning .css from making a cut-down version of it.
 
 —[abbie](https://github.com/abbie). Props to this person for showing me there is a way to debloat a discord client via [discord-css](https://github.com/abbie/discord-css).
