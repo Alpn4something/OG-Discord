@@ -450,6 +450,12 @@ code, /* code */
 .viewFullBio_f5f93a .textButton__7a01b, /* speaks for itself */
 .message__80bf8, /* message in results when searching */
 .searchResultsWrap_a98f3b, /* search results */
+.header_c0e32c, /* emoji picker tab header */
+.bodyWrapper_c0e32c,  /* emoji picker - emoji list */
+.inspector_aeaaeb.inspector_c0e32c, /* emoji picker - emoji sample + name */
+.wrapper__4e6ce.categoryList_c0e32c, /* emoji picker tab - server list */
+.graphicSecondary_aeaaeb, /* server icon where emoji is from */
+.emoji__045fa, /* emoji picker - emoji sample */
 
 body {
     transition: none !important;
@@ -460,6 +466,9 @@ body {
     outline: none !important;
 }
 
+.wrapper__4e6ce.categoryList_c0e32c /* small border hotfix */ {
+    margin-top: 1px !important;
+}
   /* a box shadow for folders and servers on the left */
 .folderButton__48112[aria-expanded="false"],
 .listItem__650eb > span:has(.blobContainer_e5445c) {
