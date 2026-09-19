@@ -2302,7 +2302,7 @@ z-index: 2;
     content: var(--custom-loading1);
     display: block;
     margin-left: -40px;
-    visibility: initial;
+    visibility: visible;
 }
 :where(.content_a2f514) .text_a2f514 .tip_a2f514 {
     position: relative !important;
@@ -2313,8 +2313,9 @@ z-index: 2;
     position: absolute;
     top: -2000px;
     left: -2000px;
-    width: 9999px;
-    height: 9999px;
+    width: 5000px;
+    height: 5000px;
     background: color-mix(black 50%, var(--custom-bg) 50%);
-    visibility: initial;
+    visibility: visible;
+    z-index: -1;
 }
