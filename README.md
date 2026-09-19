@@ -133,16 +133,16 @@ Alternatively, you can copy text from settings file and merge it with [OG-Discor
 
 
 # THIS WOULDN'T BE POSSIBLE WITHOUT:
-—[Refac0r](https://github.com/refact0r). A person who made [system24](https://github.com/refact0r/system24). I used his work as a reference and basically started learning .css from making a cut-down version of it.
+— [Refac0r](https://github.com/refact0r). A person who made [system24](https://github.com/refact0r/system24). I used his work as a reference and basically started learning .css from making a cut-down version of it.
 
-—[abbie](https://github.com/abbie). Props to this person for showing me there is a way to debloat a discord client via [discord-css](https://github.com/abbie/discord-css).
+— [abbie](https://github.com/abbie). Props to this person for showing me there is a way to debloat a discord client via [discord-css](https://github.com/abbie/discord-css).
 
-—[Blade0](https://blade0.net) for making hypercompact channel list (On vencord server - css snippets text chat). I didn't really asked for a permission... But that what open source is for... Right? :trollface:
+— [Blade0](https://blade0.net) for making hypercompact channel list (On vencord server - css snippets text chat). I didn't really asked for a permission... But that what open source is for... Right? :trollface:
 
-—[domi](https://github.com/dom1torii). (well, obviously, for making [Discord 1.6](https://github.com/dom1torii/VGUICord/tree/discord16) which i forked the hell out of)
+— [domi](https://github.com/dom1torii). (well, obviously, for making [Discord 1.6](https://github.com/dom1torii/VGUICord/tree/discord16) which i forked the hell out of)
 
-—[Ungstein](https://github.com/ungstein) and his [OG-Steam](https://github.com/ungstein/OG-Steam) theme for VGUI Steam (pre 2023 UI update). If this wouldn't exist, I'd never get into old steam aesthetics in general. R.I.P OG-Steam, you were the best Steam theme i used :(
+— [Ungstein](https://github.com/ungstein) and his [OG-Steam](https://github.com/ungstein/OG-Steam) theme for VGUI Steam (pre 2023 UI update). If this wouldn't exist, I'd never get into old steam aesthetics in general. R.I.P OG-Steam, you were the best Steam theme i used :(
 
 
 
-—A very very anonymous person in my steam friends (if you're reading this, then you either know who he is, or have completely no idea). Gave me some tips on how to start. Sometimes i kept moving on with this fork just to show him some progress through steam chat. Same goes for all of my friends:)))
+— A very very anonymous person in my steam friends (if you're reading this, then you either know who he is, or have completely no idea). Gave me some tips on how to start. Sometimes i kept moving on with this fork just to show him some progress through steam chat. Same goes for all of my friends:)))
