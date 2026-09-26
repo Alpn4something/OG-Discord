@@ -469,6 +469,7 @@ body {
 .wrapper__4e6ce.categoryList_c0e32c /* small border hotfix */ {
     margin-top: 1px !important;
 }
+
   /* a box shadow for folders and servers on the left */
 .folderButton__48112[aria-expanded="false"],
 .listItem__650eb > span:has(.blobContainer_e5445c) {
@@ -615,6 +616,7 @@ body {
 .statusAccessory_c1e9c4 .svg__2338f.mask_a423bd, /* status box in layered container when choosing your status */
 .placeholderCard_d87d30, /* server stickers card  */
 .auditLog__43dab, /* server audit log row */
+.errorLoadingBarAlt__0f481, /* messages failed to load button */
 :where(.contentRegion__23e6b) .listBoxItemContent__2e223.option__56a50.inInput__2e223, /* inactive timeout box */
 .bannedUser__4b8d8 /* server's banned user */
 
@@ -1324,6 +1326,7 @@ foreignObject[mask*="status-online"] .status_a423bd {
 [class*="contents_"] [class*="avatar_"],
 [class*="panels"] [class*="wrapper__"] img,
 [class*="container"] [class*="wrapper__"] img,
+[class*="topBar_"] [class*="wrapper__"] img,
 [class*="section"] [class*="wrapper__"] img {
     background-color: var(--alpn4-custom-bg-black) !important;
 }
@@ -2249,6 +2252,11 @@ z-index: 2;
 {
     background: var(--custom-secondary-accent-brighter) !important;
 }
+     /* messages failed to load recolor */
+.messagesErrorBar__0f481 {
+  color: var(--custom-accent) !important;
+  background: color-mix(var(--custom-secondary-accent) 100%, black 20%) !important;
+}
 
 
      /* BLURPLE & OTHER COLORS REPAINTED THROUGH STYLES COLORS */
@@ -2276,6 +2284,9 @@ z-index: 2;
 
     --icon-voice-muted: var(--custom-userarea-buttons-color) !important; /* Speaks for itself. E.G - muted mic icon */
 
+    --text-feedback-positive: var(--custom-accent) !important; /* "Active account" thing on "Manage accounts" tab */
+    --text-feedback-critical: color-mix(var(--dnd-2) 100%, white 10%) !important; /* "Please log in again" */
+
     --red-new-46: var(--custom-notifications) !important; /* Notifications. E.G - a red counter of messages that a friend sent you */
     --red-new-50: var(--custom-notifications) !important; /* new notifs color - fix. No idea why these schizos changed it */
 
@@ -2302,6 +2313,7 @@ z-index: 2;
     content: var(--custom-loading1);
     display: block;
     margin-left: -40px;
+    margin-top: 74px;
     visibility: visible;
 }
 :where(.content_a2f514) .text_a2f514 .tip_a2f514 {
