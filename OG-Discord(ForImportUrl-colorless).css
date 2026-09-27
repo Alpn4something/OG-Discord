@@ -57,6 +57,7 @@
 
     --shadow-high: transparent !important;
 
+	--text-default: var(--custom-text) !important;
     --text-normal: var(--custom-text) !important;
     --text-primary: var(--custom-text) !important;
     --text-tertiary: var(--custom-secondary-text) !important;
