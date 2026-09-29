@@ -57,15 +57,31 @@
 
     --shadow-high: transparent !important;
 
-	--text-default: var(--custom-text) !important;
+    /* text colors expanded. I hope it will work well this time */
+    --text-default: var(--custom-text) !important; 
     --text-normal: var(--custom-text) !important;
     --text-primary: var(--custom-text) !important;
     --text-tertiary: var(--custom-secondary-text) !important;
-    --text-muted: var(--custom-secondary-text) !important;
+    --text-muted: var(--custom-secondary-text) !important;   /* ← решите, что оставить */
     --chat-text-muted: var(--custom-secondary-text) !important;
     --channels-default: var(--custom-secondary-text) !important;
     --header-secondary: var(--custom-secondary-text) !important;
     --header-primary: var(--custom-text) !important;
+    --text-brand: var(--custom-text) !important;
+    --text-feedback-critical: var(--custom-text) !important;
+    --text-feedback-info: var(--custom-text) !important;
+    --text-feedback-positive: var(--custom-text) !important;
+    --text-feedback-warning: var(--custom-text) !important;
+    --text-invert: var(--custom-text) !important;
+    --text-link: var(--custom-text) !important;
+    --text-strong: var(--custom-text) !important;
+    --text-subtle: var(--custom-text) !important;
+    --text-voice-connected: var(--custom-text) !important;
+    --text-voice-disconnected: var(--custom-text) !important;
+    --interactive-text-active: var(--custom-text) !important;
+    --interactive-text-default: var(--custom-text) !important;
+    --interactive-text-hover: var(--custom-text) !important;
+    --control-secondary-text-default: var(--custom-text) !important;
 
     --interactive-normal: var(--custom-secondary-text) !important;
     --interactive-hover: var(--custom-text) !important;
@@ -764,7 +780,7 @@ body {
 }
 .gifTag_f60819::after {
      content: "GIF";
-     color: var(--custom-text);
+     color: white;
      position: relative;
      top: 3px;
      font-weight: bold;
@@ -1016,7 +1032,8 @@ img[src*=collectibles],
     display: none;
 }
 
-/* CUSTOM - Button background debloat */
+/* CUSTOM - Button background debloat + nitro button disable */
+.expressiveWrapper_a22cb0:has(.expressiveBackground_a22cb0),
 .expressiveRive_a22cb0.expressiveBackground_a22cb0,
 .expressiveRive_a22cb0.expressiveFill_a22cb0 {
     display: none !important;
@@ -1067,6 +1084,7 @@ margin: -10px !important;
 }
 /* CUSTOM - badges removal */
 
+.guildTagPill__26b1f,
 .container__8061a,
 .badgeContainer_b08af5 {
     display: none !important;
@@ -1886,9 +1904,20 @@ foreignObject[mask*="status-online"] .status_a423bd {
 }
 
 /* /=====|MISC FIXES|=====\ */
+
+    /* fix for text server icons */
+
+.acronym__6e9f8 {
+    color: var(--custom-text) !important;
+}
+
     /* <code> fix */
 
-code:not([class="scrollbarGhostHairline_da3286 scrollbar_da3286 hljs css"]):not(.codeView__4d95d) {
+code:not(
+    [class="scrollbarGhostHairline_da3286 scrollbar_da3286 hljs css"],
+    .codeView__4d95d,
+    .codeContainer__75297 *
+) {
     display: inline-block !important;
     padding: 5px !important;
     margin: 0 !important;
