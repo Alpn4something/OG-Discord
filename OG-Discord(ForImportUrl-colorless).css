@@ -343,6 +343,7 @@ div[aria-label="Poll options"] > div, /* Poll option buttons */
 .actionButton_f8fa06, /* Friend action buttons */
 .addFriendInputWrapper__72ba7, /* Wrapper in add friend tab */
 .bar__7aaec, /* "New Unreads" thingy */
+.reactionBtn_f8896c, /* Reaction button for forums */
 .reactionBtn__23977, /* React button */
 .reaction__23977:has([aria-pressed="false"]), /* Reactions (non reacted) */
 .nonVisualMediaItem_f4758a, /* Text file message container */
