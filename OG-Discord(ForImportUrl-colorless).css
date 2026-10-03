@@ -1879,11 +1879,11 @@ foreignObject[mask*="status-online"] .status_a423bd {
 
   /* Replace home button - new code port */
 
-.wrapper__6e9f8 .childWrapper__6e9f8 svg {
+.wrapper__6e9f8:not(:has(.favoriteIcon_c9fddf)) .childWrapper__6e9f8 svg {
     display: none !important;
 }
 
-.wrapper__6e9f8 .childWrapper__6e9f8:not(.acronym__6e9f8)::after {
+.wrapper__6e9f8:not(:has(.favoriteIcon_c9fddf)) .childWrapper__6e9f8:not(.acronym__6e9f8)::after {
     content: var(--custom-logo);
     margin-left: 3px;
     margin-top: 3px;
