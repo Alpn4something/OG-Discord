@@ -2309,7 +2309,8 @@ z-index: 2;
     --opacity-blue-8-hsl: var(--blurpleHSL-hue) calc(var(--saturation-factor, 1)*var(--blurpleHSL-sat)) var(--blurpleHSL-lig) !important; /* server tag message background */
 
     --blue-new-37: var(--custom-accent) !important;    /* Probably most versatile blue text color? */
-    --blue-new-27: transparent !important; /* focus color in email field. i don't like it */
+    --text-link: var(--custom-accent) !important; /* links color */
+    --blue-new-27: var(--custom-accent) !important; /* It broke lol */
     --blue-new-31: var(--custom-accent) !important; /* server tag message */
 
     --icon-voice-muted: var(--custom-userarea-buttons-color) !important; /* Speaks for itself. E.G - muted mic icon */
