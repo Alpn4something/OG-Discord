@@ -584,6 +584,16 @@ body {
         color: var(--custom-somebuttons);
         margin-bottom: -3px !important
 }
+/* fix for unnecessary border */
+.channelTextArea_f75fb0.channelTextArea__74017 {
+	border: none !important;
+}
+
+/* reply bar border fix */
+.stackedBars__74017 {
+    border: 1px solid !important;
+    border-color: var(--light-border) var(--light-border) transparent var(--light-border) !important;
+}
 
 /* inverted borders setup! */
 .app__160d8 button:active,
